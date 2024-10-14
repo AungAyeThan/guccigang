@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import GetInTouch from "./components/GetInTouch";
 import OurValue from "./components/OurValue";
 import Partners from "./components/Partners";
@@ -11,6 +12,7 @@ enum EImageUri {
   Workshop = "/images/physical-workshop.png",
   GroupPicRight = "/images/group_12399_r.png",
   GroupPicLeft = "/images/image_828_l.png",
+  DoodleAsset3 = "/images/doodle-assets-3.svg",
   DoodleAsset4 = "/images/doodle-assets-4.svg",
 }
 
@@ -20,9 +22,20 @@ export default function Home() {
       <div className="flex bg-white px-4 py-12">
         <div className="mx-auto flex max-w-7xl flex-col items-center md:flex-row md:justify-between">
           <div className="mb-8 text-center md:mb-0 md:w-1/2 md:text-left">
-            <h1 className="home-title mb-4 font-plusJakarta">
-              User Experiences Myanmar
-            </h1>
+            <div className="flex items-center justify-between">
+              <h1 className="home-title mb-4 font-plusJakarta">
+                User Experiences Myanmar
+              </h1>
+              {/* This doodle will now be positioned using absolute positioning */}
+              <div className="absolute sm:top-[50px] md:top-[105px]
+                md:left-[350px] lg:left-[400px] xl:left-[550px] 2xl:left-[750px] hidden md:block">
+                <img
+                  src={EImageUri.DoodleAsset3}
+                  alt="DoodleAsset3"
+                  className="w-12 h-12 lg:w-[150px] md:h-[50px] lg:h-[50px] xl:h-[60px]"
+                />
+              </div>
+            </div>
             <div className="block flex justify-center md:hidden md:w-1/2 md:justify-end">
               <img
                 src={EImageUri.UxmmLogo}
@@ -121,11 +134,11 @@ export default function Home() {
                 Physical Workshop
               </h2>
               {/* This doodle will now be positioned using absolute positioning */}
-              <div className="absolute top-[65px] lg:left-[600px] lg:left-[650px] hidden md:block">
+              <div className="absolute top-[65px] md:left-[450px] lg:left-[450px] xl:left-[650px] 2xl:left-[850px] hidden md:block">
                 <img
                   src={EImageUri.DoodleAsset4}
                   alt="DoodleAsset4"
-                  className="w-12 h-12 lg:w-[150px] lg:h-[70px]"
+                  className="w-12 h-12 lg:w-[150px] md:h-[50px] lg:h-[50px] xl:h-[80px] 2xl:h-[80px]"
                 />
               </div>
             </div>
@@ -161,6 +174,7 @@ export default function Home() {
       <OurValue />
       <Partners />
       <GetInTouch />
+      <Footer />
     </>
   );
 }

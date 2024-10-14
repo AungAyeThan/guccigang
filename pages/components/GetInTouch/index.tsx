@@ -19,7 +19,7 @@ const GetInTouch = () => {
 
       <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row">
         <button className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg font-poppins">
-          Contact Us &rarr;
+          Contact Us
         </button>
       </div>
     </div>

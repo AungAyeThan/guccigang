@@ -1,62 +1,112 @@
 enum EImageUri {
-  Collaboration = '/images/collaboration.png',
-  Empowerment = '/images/empowerment.png',
-  Transparency = '/images/transparency.png',
+  Collaboration = "/images/collaboration.png",
+  Empowerment = "/images/empowerment.png",
+  Transparency = "/images/transparency.png",
+  Diversity = "/images/diversity.png",
+  WavyBackground = "/images/wavy-background.png",
+  Line = "/images/our-value-line.svg",
 }
 
 const OurValue = () => {
   return (
-    <div className="text-center">
-      <p className="mt-8 text-2xl font-bold leading-10">
-        Our <span className="uxmm-text">Value</span>
-      </p>
-      <div className="mt-[3rem] grid grid-cols-1 gap-0 sm:mx-[4rem] md:mx-[5rem] md:mt-[3rem] md:grid-cols-2">
-        <div className="mx-4 md:mx-[4rem]">
-          <div className="flex items-center justify-center">
-            <img src={EImageUri.Transparency} alt="uxmm" className="inline-block" />
-          </div>
-          <p className="mt-2 text-lg font-semibold">Transparency</p>
-          <div className="mt-2 md:m-[30px]">
-            <p className="text-center text-sm leading-6">
-              Team transparency at UXMM involves clear communication, shared decision-making, accountability, and
-              fosters trust and a shared sense of ownership, helping us achieve our goals.
+    <div className="relative py-16">
+      {/* Wavy Background Image */}
+      <div
+        className="mt-[150px] absolute inset-0 bg-no-repeat bg-center bg-contain opacity-80"
+        style={{
+          backgroundImage: `url(${EImageUri.WavyBackground})`,
+        }}
+      ></div>
+
+      {/* Content (Text and Values Grid) */}
+      <div className="relative z-10">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold font-plusJakarta text-customgray">
+            Our <span className="text-red-500">Values</span>
+            <img
+              src={EImageUri.Line}
+              alt="wavy line"
+              className="absolute w-20 h-auto left-[70px] right-0 mx-auto top-[40px]"
+            />
+          </h2>
+        </div>
+
+        {/* Values Grid */}
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
+          {/* Transparency */}
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src={EImageUri.Transparency}
+                alt="Transparency Icon"
+                className="w-16 h-16"
+              />
+            </div>
+            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+              Transparency
+            </h3>
+            <p className="text-center text-[14px] font-normal leading-[22px] font-poppins">
+              Team transparency at UXMM involves clear communication, shared
+              decision-making, accountability, and fosters trust and a shared
+              sense of ownership, helping us achieve our goals.
             </p>
           </div>
-        </div>
-        <div className="mx-4 md:mx-[4rem]">
-          <div className="flex items-center justify-center">
-            <img src={EImageUri.Collaboration} alt="uxmm" className="inline-block" />
-          </div>
-          <p className="mt-2 text-lg font-semibold">Collaboration</p>
-          <div className="mt-2 md:m-[30px]">
-            <p className="text-sm leading-6">
-              Team collaboration at UXMM involves working efficiently towards shared goals, leveraging strengths,
-              promoting inclusivity and support, leading to better outcomes and a stronger community.
+
+          {/* Collaboration */}
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src={EImageUri.Collaboration}
+                alt="Collaboration Icon"
+                className="w-16 h-16"
+              />
+            </div>
+            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+              Collaboration
+            </h3>
+            <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
+              Team collaboration at UXMM involves working efficiently towards
+              shared goals, leveraging strengths, promoting inclusivity and
+              support, leading to better outcomes and a stronger community.
             </p>
           </div>
-        </div>
-        <div className="mx-4 md:mx-[4rem]">
-          <div className="flex items-center justify-center">
-            <img src={EImageUri.Empowerment} alt="uxmm" className="inline-block" />
-          </div>
-          <p className="mt-2 text-lg font-semibold">Empowerment</p>
-          <div className="mt-2 md:m-[30px]">
-            <p className="text-sm leading-6">
-              Team empowerment at UXMM involves providing growth opportunities, fostering autonomy, innovation, and
-              experimentation, enabling individuals to reach their full potential and contribute to the community's
-              success.
+
+          {/* Empowerment */}
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src={EImageUri.Empowerment}
+                alt="Empowerment Icon"
+                className="w-16 h-16"
+              />
+            </div>
+            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+              Empowerment
+            </h3>
+            <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
+              Team empowerment at UXMM involves providing growth opportunities,
+              fostering autonomy, innovation, and experimentation, enabling
+              individuals to reach their full potential and contribute to the
+              community's success.
             </p>
           </div>
-        </div>
-        <div className="mx-4 md:mx-[4rem]">
-          <div className="flex items-center justify-center">
-            <img src={EImageUri.Empowerment} alt="uxmm" className="inline-block" />
-          </div>
-          <p className="mt-2 text-lg font-semibold">Diversity</p>
-          <div className="mt-2 md:m-[30px]">
-            <p className="text-sm leading-6">
-              Team diversity at UXMM involves embracing differences, creating a diverse and inclusive environment that
-              reflects our users, leading to better design solutions and a more representative community.
+
+          {/* Diversity */}
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src={EImageUri.Diversity}
+                alt="Diversity Icon"
+                className="w-16 h-16"
+              />
+            </div>
+            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+              Diversity
+            </h3>
+            <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
+              Team diversity at UXMM involves embracing differences, creating a
+              diverse and inclusive environment that reflects our users, leading
+              to better design solutions and a more representative community.
             </p>
           </div>
         </div>

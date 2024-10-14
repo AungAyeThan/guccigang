@@ -1,8 +1,8 @@
 enum EImageUri {
-  IXDA = '/images/ixda.png',
-  UXMY = '/images/uxmy.png',
-  UXPH = '/images/uxph.png',
-  UXSEA = '/images/uxsea.png',
+  IXDA = "/images/ixda.png",
+  UXMY = "/images/uxmy.png",
+  UXPH = "/images/uxph.png",
+  UXSEA = "/images/uxsea.png",
 }
 
 const Partners = () => {
@@ -12,7 +12,8 @@ const Partners = () => {
         Our <span className="uxmm-text">Partners</span>
       </p>
       <p className="mt-3 text-center text-lg font-normal leading-7">
-        UXMM has numerous partners both <span className="uxmm-text-color">locally</span> and{' '}
+        UXMM has numerous partners both{" "}
+        <span className="uxmm-text-color">locally</span> and{" "}
         <span className="uxmm-text-color">internationally</span>
       </p>
 

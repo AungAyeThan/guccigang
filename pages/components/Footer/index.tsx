@@ -17,11 +17,7 @@ const Footer = () => {
         {/* Logo and Newsletter Section */}
         <div>
           <div className="mb-4">
-            <img
-              src={EImageUri.UXMMLogo}
-              alt="UXMM Logo"
-              className="md:mx-auto md:mx-1"
-            />
+            <img src={EImageUri.UXMMLogo} alt="UXMM Logo" className="" />
           </div>
           <p className="text-gray-600 mb-4 text-customgray">
             Stay up to date with the latest news, announcements, and articles.

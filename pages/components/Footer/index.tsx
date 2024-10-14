@@ -1,8 +1,8 @@
 enum EImageUri {
   UXMMLogo = "/images/uxmm-footer.png",
   FacebookIcon = "/images/facebook.png",
-  LinkedInIcon = "/images/linkedin.png",
-  YouTubeIcon = "/images/youtube.png",
+  LinkedInIcon = "/images/linkedIn.png",
+  YouTubeIcon = "/images/YouTube.png",
   ApplePodcast = "/images/applepodcasts.png",
   SpotifyIcon = "/images/spotify.png",
   GooglePodcastIcon = "/images/googlepodcasts.png",

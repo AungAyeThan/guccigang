@@ -20,7 +20,7 @@ const Footer = () => {
             <img
               src={EImageUri.UXMMLogo}
               alt="UXMM Logo"
-              className="md:mx-auto md:mx-0"
+              className="md:mx-auto md:mx-1"
             />
           </div>
           <p className="text-gray-600 mb-4 text-customgray">

@@ -27,8 +27,10 @@ export default function Home() {
                 User Experiences Myanmar
               </h1>
               {/* This doodle will now be positioned using absolute positioning */}
-              <div className="absolute sm:top-[50px] md:top-[105px]
-                md:left-[350px] lg:left-[400px] xl:left-[550px] 2xl:left-[750px] hidden md:block">
+              <div
+                className="absolute sm:top-[50px] md:top-[105px]
+                md:left-[350px] lg:left-[400px] xl:left-[550px] 2xl:left-[750px] hidden md:block"
+              >
                 <img
                   src={EImageUri.DoodleAsset3}
                   alt="DoodleAsset3"
@@ -71,14 +73,14 @@ export default function Home() {
 
       <div className="flex flex-col items-center justify-center py-8 bg-slate-50">
         {/* Main container */}
-        <div className="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-12 px-4">
+        <div className="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-6 px-4">
           {/* Left Member Image */}
-          <div className="flex items-center justify-center lg:ml-8">
-            <div className="">
+          <div className="flex items-center justify-center">
+            <div>
               <img
                 src={EImageUri.GroupPicLeft}
                 alt="Left Member"
-                // className="w-24 h-24 lg:w-32 lg:h-32"
+                className="w-[300px]"
               />
             </div>
           </div>
@@ -93,7 +95,6 @@ export default function Home() {
               platform, offering technical knowledge, educational resources, and
               community engagement.
             </p>
-
             <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-center">
               <button className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg">
                 About Us &rarr;
@@ -102,12 +103,12 @@ export default function Home() {
           </div>
 
           {/* Right Member Image */}
-          <div className="flex items-center justify-center lg:ml-10">
+          <div className="flex items-center justify-center lg:ml-4">
             <div>
               <img
                 src={EImageUri.GroupPicRight}
                 alt="Right Member"
-                // className="w-24 h-24 lg:w-32 lg:h-32"
+                className="w-[300px]"
               />
             </div>
           </div>

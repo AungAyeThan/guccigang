@@ -1,3 +1,4 @@
+import GetInTouch from "./components/GetInTouch";
 import OurValue from "./components/OurValue";
 import Partners from "./components/Partners";
 
@@ -141,7 +142,7 @@ export default function Home() {
             </p>
 
             {/* Button */}
-            <button className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg">
+            <button className="mt-4 rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg">
               Register Now &rarr;
             </button>
           </div>
@@ -159,6 +160,7 @@ export default function Home() {
 
       <OurValue />
       <Partners />
+      <GetInTouch />
     </>
   );
 }

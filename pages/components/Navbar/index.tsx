@@ -58,12 +58,12 @@ const Navbar = () => {
         >
           <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 font-poppins text-base font-normal leading-6 text-left">
             <li>
-              <a href="#" className="text-red-500 hover:text-red-600">
+              <a href="/" className="text-red-500 hover:text-red-600">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="text-gray-700 hover:text-red-500">
+              <a href="aboutus" className="text-gray-700 hover:text-red-500">
                 About Us
               </a>
             </li>

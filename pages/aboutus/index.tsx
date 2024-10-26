@@ -155,7 +155,7 @@ const ImageCarousel = () => {
         </div>
       </div>
 
-      <GetInTouch/>
+      <GetInTouch />
     </>
   );
 };

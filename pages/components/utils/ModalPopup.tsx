@@ -25,52 +25,46 @@ const ModalComponent: React.FC<ModalProps> = ({
       ></div>
       <div className="bg-white p-4 md:p-6 rounded-lg shadow-md z-10 w-full max-w-md mx-4">
         <div className="flex justify-between">
-          <h2 className="text-xl font-semibold">Member Profile</h2>
+          <h2 className="text-xl font-semibold">{title}</h2>
           <button
             onClick={onClose}
             className="rounded-full flex items-center justify-center text-white bg-gray-50 hover:bg-gray-300 px-3 py-2"
           >
             {/* Optional close icon */}
+            X
           </button>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center mb-4">
           <img
             src={image}
             alt="member"
-            className="w-[240px] h-[auto] max-w-full object-cover"
+            className="w-[200px] h-auto max-w-full object-cover"
           />
         </div>
-        <p className="text-xl font-semibold mb-2 text-center mt-2 text-[16px] leading-[26px] font-[500]">
-          {title}
-        </p>
-        <p className="text-gray-600 text-[14px] text-center leading-[22px] font-[400] uxmm-text-color">
+        <p className="text-gray-600 text-[14px] text-center leading-[22px] font-[400] uxmm-text-color mb-2">
           {subtitle}
         </p>
         <div className="flex space-x-4 items-center justify-center mb-4">
           <button className="text-black border-[1px] border-black px-3 py-1 rounded-lg">
-            <span className="text-[16px] leading-[26px] font-[400]">
-              {" "}
-              LinkedIn
-            </span>
+            <span className="text-[16px] leading-[26px] font-[400]"> LinkedIn</span>
           </button>
           <button className="text-black border-[1px] border-black px-3 py-1 rounded-lg">
-            <span className="text-[16px] leading-[26px] font-[400]">
-              {" "}
-              Behance
-            </span>
+            <span className="text-[16px] leading-[26px] font-[400]"> Behance</span>
           </button>
         </div>
-        <div>
-          <p className="text-gray-600 text-[16px] leading-[26px] font-[400] text-center">
+        {/* Scrollable content area with decreased height */}
+        <div className="max-h-[200px] md:max-h-[250px] overflow-y-auto">
+          <p className="text-gray-600 text-[14px] leading-[22px] font-[400] text-center">
             I’ve been in the Information & Communication Technology field since
             2001 and formal professional experiences of product & project design
-            management, enterprise applications and service design especially in
+            management, enterprise applications, and service design, especially in
             Digital Products. I'm currently a UX Consultant at S2T Software
             Company (Singapore) and also a founder of UXMM Community
             Organization (UXMM). UXMM is a non-profit organization building the
             only career growth platform focused on providing international
-            technical knowledge, educational resources and passion for Product
-            design, User Experience and User Interface design across in Myanmar.
+            technical knowledge, educational resources, and passion for Product
+            design, User Experience, and User Interface design across in
+            Myanmar.
           </p>
         </div>
       </div>

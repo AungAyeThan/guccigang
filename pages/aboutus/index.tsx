@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import OurValue from "../components/OurValue";
-import Members from "../components/common/Members";
-import GetInTouch from "../components/GetInTouch";
+import OurValue from "../../components/OurValue";
+import Members from "../../components/common/Members";
+import GetInTouch from "../../components/GetInTouch";
 
 enum EImageUri {
   Slider1 = "/images/slider1.png",
@@ -140,6 +140,55 @@ const ImageCarousel = () => {
               to driving the growth of design and technology in Myanmar and
               beyond.{" "}
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-4 py-8 max-w-5xl mx-auto">
+        <h2 className="text-center text-2xl font-semibold text-gray-800 mb-8">
+          <span className="text-gray-800">Our </span>
+          <span className="text-red-500">Missions & Visions</span>
+        </h2>
+
+        <div className="flex flex-col md:flex-row md:justify-between md:gap-12 gap-8">
+          {/* Mission Section */}
+          <div className="flex-1 max-w-lg md:max-w-[45%] mx-auto md:mx-0 px-1 md:px-7">
+            <h3 className="text-3xl font-semibold leading-[42px] text-left font-plusJakarta">
+              Missions
+            </h3>
+            <div className="border-t border-gray-300 pt-4">
+              <h4 className="text-2xl font-bold leading-[38px] text-left font-plusJakarta mb-3">
+                Empowering Exceptional User Experiences
+              </h4>
+              <p className="text-base leading-[26px] text-left font-poppins">
+                At UXMM, our mission is to empower exceptional user experiences.
+                We are dedicated to providing the tools, knowledge, and
+                resources needed to create impactful, user-centric designs.
+                Through our commitment to excellence, we strive to elevate the
+                standard of UX design and enhance the digital landscape for all
+                users.
+              </p>
+            </div>
+          </div>
+
+          {/* Vision Section */}
+          <div className="flex-1 max-w-lg md:max-w-[45%] mx-auto md:mx-0 mt-[10%]">
+            <h3 className="text-3xl font-semibold leading-[42px] text-left font-plusJakarta">
+              Visions
+            </h3>
+            <div className="border-t border-gray-300 pt-4">
+              <h4 className="text-2xl font-bold leading-[38px] text-left font-plusJakarta mb-3">
+                Envisioning a Seamless Digital Future
+              </h4>
+              <p className="text-base leading-[26px] text-left font-poppins">
+                At UXMM, our vision is to envision and create a seamless digital
+                future where user experiences are intuitive, immersive, and
+                transformative. We strive to be at the forefront of
+                technological advancements and design innovation, continuously
+                pushing the boundaries of UX to deliver exceptional
+                interactions.
+              </p>
+            </div>
           </div>
         </div>
       </div>

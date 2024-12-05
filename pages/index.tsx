@@ -1,7 +1,6 @@
-import Footer from "./components/Footer";
-import GetInTouch from "./components/GetInTouch";
-import OurValue from "./components/OurValue";
-import Partners from "./components/Partners";
+import GetInTouch from "../components/GetInTouch";
+import OurValue from "../components/OurValue";
+import Partners from "../components/Partners";
 
 enum EImageUri {
   UxmmLogo = "/images/home.png",

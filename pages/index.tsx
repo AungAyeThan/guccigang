@@ -22,8 +22,8 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col items-center md:flex-row md:justify-between">
           <div className="mb-8 text-center md:mb-0 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
-              <h1 className="home-title mb-4 font-plusJakarta">
-                User Experiences Myanmar
+              <h1 className="uxmm-text-color font-[700] text-[40px] lending-[54px] mb-4 font-plusJakarta md:w-[80%]">
+                Expowering Myanmar’s Design Community
               </h1>
               {/* This doodle will now be positioned using absolute positioning */}
               <div
@@ -44,18 +44,20 @@ export default function Home() {
                 className="h-auto max-w-full"
               />
             </div>
-            <p className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0 text-left">
-              Our organization provides technical knowledge and educational
-              resources for Product design, User Experience, and User Interface.
+            <p className="md:max-w-md font-poppins text-[16px] font-[400] leading-[26px] text-customgray mt-5 md:py-0 text-left">
+              UXMM is a pioneering non-profit organization established in 2020.
+              Driven by a dedicated team of volunteers, we've been empowering
+              Myanmar's design community and fostering a culture of innovation
+              and collaboration.
             </p>
 
             {/* Buttons */}
             <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
-              <button className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg">
+              <button className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg border-2">
                 Join With Us →
               </button>
-              <button className="rounded-full border border-pink-500 bg-white px-6 py-3 font-semibold text-pink-500 shadow-lg hover:bg-pink-200">
-                Latest Event
+              <button className="rounded-full border border-pink-500 bg-white px-6 py-3 font-semibold text-pink-500 shadow-lg hover:bg-pink-200 border-2">
+                Upcoming Events
               </button>
             </div>
           </div>
@@ -86,10 +88,11 @@ export default function Home() {
 
           {/* Middle Text Section */}
           <div className="text-center max-w-lg">
-            <h2 className="text-3xl font-bold text-customgray mb-4">
-              About <span className="text-red-500 font-plusJakarta">UXMM</span>
+            <h2 className="text-[24px] lending-[38px] font-[700] font-bold text-customgray mb-4">
+              About{" "}
+              <span className="uxmm-text-color font-plusJakarta">UXMM</span>
             </h2>
-            <p className="mb-6 text-center font-poppins text-[16px] font-normal leading-[26px] text-mildGray">
+            <p className="mb-6 text-center font-poppins text-[16px] font-[400] leading-[26px] text-customgray">
               UXMM empowers UX design in Myanmar through our career growth
               platform, offering technical knowledge, educational resources, and
               community engagement.
@@ -114,8 +117,8 @@ export default function Home() {
         </div>
       </div>
 
-      <p className="mt-3 text-center text-xl font-bold leading-[38px] sm:mt-4 md:text-2xl">
-        Latest <span className="uxmm-text">Event</span>
+      <p className="mt-3 text-center text-[24px] font-[700] leading-[38px] sm:mt-4">
+        Latest <span className="uxmm-text-color">Event</span>
       </p>
 
       <div className="flex justify-center md:hidden md:w-1/2 md:justify-end px-4 py-4">
@@ -130,7 +133,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col items-start md:flex-row md:justify-between md:pl-[100px]">
           <div className="mb-7 text-center md:text-left">
             <div className="flex items-center justify-between">
-              <h2 className="font-poppins text-sm text-mildGray mt-10">
+              <h2 className="font-poppins text-[16px] lending-[26px] font-[400] text-mildGray mt-10">
                 Physical Workshop
               </h2>
               {/* This doodle will now be positioned using absolute positioning */}
@@ -143,11 +146,11 @@ export default function Home() {
               </div>
             </div>
 
-            <h1 className="text-left font-plusJakarta text-[20px] mb-3 md:text-[24px] font-bold leading-[38px] text-customgray">
+            <h1 className="text-left font-plusJakarta text-[20px] font-[700] mb-3 md:text-[24px] font-bold leading-[38px] text-customgray">
               From Ideation to Implementation
             </h1>
 
-            <p className="mb-4 max-w-md font-poppins text-[16px] leading-[26px] text-customgray text-left">
+            <p className="mb-4 max-w-md font-poppins font-[400] text-[16px] leading-[26px] text-customgray text-left">
               Attend our workshop to learn how to create a design system from
               ideation to implementation. Ideal for beginners and design system
               refreshers, discover best practices for showcasing your skills and

@@ -45,7 +45,7 @@ const OurValue = () => {
             <h3 className="text-lg font-bold font-plusJakarta mb-5">
               Transparency
             </h3>
-            <p className="text-center text-[14px] font-normal leading-[22px] font-poppins">
+            <p className="text-center text-[14px] font-[400] leading-[22px] font-poppins text-customgray">
               Team transparency at UXMM involves clear communication, shared
               decision-making, accountability, and fosters trust and a shared
               sense of ownership, helping us achieve our goals.

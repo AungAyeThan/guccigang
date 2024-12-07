@@ -8,13 +8,14 @@ enum EImageUri {
 const Partners = () => {
   return (
     <div className="bg-white py-8 px-4 md:px-16">
-      <h2 className="text-center text-2xl font-bold font-plusJakarta text-black">
-        Our <span className="text-red-500">Partners</span>
+      <h2 className="text-center text-2xl font-[700] lending-[38px] text-[24px] font-plusJakarta">
+        <span className="text-customgray">Our</span>{" "}
+        <span className="uxmm-text-color">Partners</span>
       </h2>
-      <p className="mt-4 text-center text-customgray font-poppins">
+      <p className="mt-4 text-center text-customgray font-poppins text-[16px] lending-[26px]">
         UXMM has numerous partners both{" "}
-        <span className="text-red-500">locally</span> and{" "}
-        <span className="text-red-500">internationally</span>
+        <span className="uxmm-text-color">locally</span> and{" "}
+        <span className="uxmm-text-color">internationally</span>
       </p>
 
       <div className="grid grid-cols-2 mt-8 md:grid-cols-6 justify-center mx-auto lg:mx-[150px]">

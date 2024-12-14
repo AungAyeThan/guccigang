@@ -1,3 +1,5 @@
+import Sitemap from "./sitemap";
+
 enum EImageUri {
   UXMMLogo = "/images/uxmm-footer.png",
   FacebookIcon = "/images/facebook.png",

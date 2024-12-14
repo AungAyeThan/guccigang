@@ -28,7 +28,7 @@ export default function Home() {
               {/* This doodle will now be positioned using absolute positioning */}
               <div
                 className="absolute sm:top-[50px] md:top-[185px]
-                md:left-[350px] lg:left-[400px] xl:left-[550px] 2xl:left-[750px] hidden md:block"
+                md:left-[350px] lg:left-[400px] xl:left-[550px] 2xl:left-[41%] hidden md:block"
               >
                 <img
                   src={EImageUri.DoodleAsset3}
@@ -137,7 +137,7 @@ export default function Home() {
                 Physical Workshop
               </h2>
               {/* This doodle will now be positioned using absolute positioning */}
-              <div className="absolute top-[65px] md:left-[450px] lg:left-[450px] xl:left-[650px] 2xl:left-[850px] hidden md:block">
+              <div className="absolute top-[65px] md:left-[450px] lg:left-[450px] xl:left-[650px] 2xl:left-[45%] hidden md:block">
                 <img
                   src={EImageUri.DoodleAsset4}
                   alt="DoodleAsset4"

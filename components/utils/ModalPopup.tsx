@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 interface ModalProps {
   isOpen: boolean;
@@ -15,24 +15,48 @@ const ModalComponent: React.FC<ModalProps> = ({
   subtitle,
   image,
 }) => {
+  // Prevent scrolling when the modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <div
-      className={`fixed inset-0 flex items-center justify-center ${isOpen ? "" : "hidden"}`}
+      className={`fixed inset-0 z-50 flex items-center justify-center transition-opacity ${
+        isOpen
+          ? "opacity-100 pointer-events-auto"
+          : "opacity-0 pointer-events-none"
+      }`}
+      aria-hidden={!isOpen}
     >
+      {/* Modal backdrop */}
       <div
         className="absolute inset-0 bg-gray-800 opacity-50"
         onClick={onClose}
       ></div>
+
+      {/* Modal content */}
       <div className="bg-white p-4 md:p-6 rounded-lg shadow-md z-10 w-full max-w-md mx-4">
-        <div className="flex justify-between">
+        {/* Modal header */}
+        <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold">{title}</h2>
           <button
             onClick={onClose}
-            className="rounded-full flex items-center justify-center text-white bg-gray-50 hover:bg-gray-300 px-3 py-2"
+            className="rounded-full flex items-center justify-center text-gray-700 bg-gray-200 hover:bg-gray-300 p-2"
+            aria-label="Close modal"
           >
-            {/* Optional close icon */}X
+            X
           </button>
         </div>
+
+        {/* Modal image */}
         <div className="flex items-center justify-center mb-4">
           <img
             src={image}
@@ -40,24 +64,23 @@ const ModalComponent: React.FC<ModalProps> = ({
             className="w-[200px] h-auto max-w-full object-cover"
           />
         </div>
-        <p className="text-gray-600 text-[14px] text-center leading-[22px] font-[400] uxmm-text-color mb-2">
+
+        {/* Modal subtitle */}
+        <p className="text-gray-600 text-[14px] text-center leading-[22px] font-[400] mb-2">
           {subtitle}
         </p>
+
+        {/* Modal buttons */}
         <div className="flex space-x-4 items-center justify-center mb-4">
           <button className="text-black border-[1px] border-black px-3 py-1 rounded-lg">
-            <span className="text-[16px] leading-[26px] font-[400]">
-              {" "}
-              LinkedIn
-            </span>
+            LinkedIn
           </button>
           <button className="text-black border-[1px] border-black px-3 py-1 rounded-lg">
-            <span className="text-[16px] leading-[26px] font-[400]">
-              {" "}
-              Behance
-            </span>
+            Behance
           </button>
         </div>
-        {/* Scrollable content area with decreased height */}
+
+        {/* Modal scrollable content */}
         <div className="max-h-[200px] md:max-h-[250px] overflow-y-auto">
           <p className="text-gray-600 text-[14px] leading-[22px] font-[400] text-center">
             I’ve been in the Information & Communication Technology field since

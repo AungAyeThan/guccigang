@@ -4,6 +4,12 @@ import type { AppProps } from "next/app";
 import { ReactElement } from "react";
 import Layout from "../components/common/Layout";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => JSX.Element;
 };

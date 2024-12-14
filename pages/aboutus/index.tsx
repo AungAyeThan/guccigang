@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import OurValue from "../../components/OurValue";
 import Members from "../../components/common/Members";
 import GetInTouch from "../../components/GetInTouch";
+import DesktopSlider from "@/components/Carousel/desktop";
+import MobileSlider from "@/components/Carousel/mobile";
 
 enum EImageUri {
   Slider1 = "/images/slider1.png",
@@ -61,45 +63,12 @@ const ImageCarousel = () => {
 
   return (
     <>
-      <div className="relative w-full max-w-6xl mx-auto">
-        <div className="flex overflow-hidden rounded-lg">
-          {getVisibleImages().map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Slide ${currentIndex + index}`}
-              className={`object-cover h-64 ${visibleImages === 1 ? "w-full" : "w-1/4"}`}
-            />
-          ))}
-        </div>
+      <div className="w-full max-w-5xl mx-auto py-8 div1 hidden md:block">
+        <DesktopSlider />
+      </div>
 
-        {/* Navigation buttons */}
-        <button
-          onClick={prevImage}
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white bg-opacity-75 p-2 rounded-r-md shadow hover:bg-opacity-100"
-        >
-          ◀️
-        </button>
-
-        <button
-          onClick={nextImage}
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white bg-opacity-75 p-2 rounded-l-md shadow hover:bg-opacity-100"
-        >
-          ▶️
-        </button>
-
-        {/* Dots for navigation */}
-        <div className="flex justify-center mt-2">
-          {images.map((_, index) => (
-            <div
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`h-2 w-2 mx-1 rounded-full cursor-pointer ${
-                index === currentIndex ? "bg-gray-800" : "bg-gray-400"
-              }`}
-            ></div>
-          ))}
-        </div>
+      <div className="w-full max-w-5xl mx-auto py-8 div2 block md:hidden">
+        <MobileSlider />
       </div>
 
       <div className="flex bg-white px-4 py-12">

@@ -1,9 +1,19 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Controls mobile menu
   const [isProgramsOpen, setIsProgramsOpen] = useState(false); // Controls Programs dropdown
   const [isResourcesOpen, setIsResourcesOpen] = useState(false); // Controls Resources dropdown
+
+  const router = useRouter(); // Get current route
+
+  // Function to check if link is active
+  const isActive = (path: string) => router.pathname === path;
+
+  const isProgramActive = (path: string) =>
+    ["/mentor", "/partner", "/speaker", "/volunteer"].includes(path);
 
   enum EImageUri {
     UxmmLogo = "/images/uxmm-logo.png",
@@ -25,13 +35,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:flex md:items-center md:justify-between">
         {/* Logo */}
         <div className="flex justify-between items-center py-4 md:py-0 md:mr-8">
-          <a href="/" className="text-red-500 font-bold text-xl">
+          <Link href="/" className="text-red-500 font-bold text-xl">
             <img
               src={EImageUri.UxmmLogo}
               alt="uxmm"
               className="h-auto max-w-full"
             />
-          </a>
+          </Link>
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -58,21 +68,35 @@ const Navbar = () => {
         >
           <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 font-poppins text-base font-normal leading-6 text-left">
             <li>
-              <a href="/" className="text-red-500 hover:text-red-600">
+              <Link
+                href="/"
+                className={`${
+                  isActive("/") ? "text-red-500" : "text-gray-700"
+                } hover:text-red-500`}
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="aboutus" className="text-gray-700 hover:text-red-500">
+              <Link
+                href="/aboutus"
+                className={`${
+                  isActive("/aboutus") ? "text-red-500" : "text-gray-700"
+                } hover:text-red-500`}
+              >
                 About Us
-              </a>
+              </Link>
             </li>
 
             {/* Programs Menu Item with Click Dropdown */}
             <li className="relative">
               <button
                 onClick={toggleProgramsDropdown}
-                className="text-gray-700 hover:text-red-500 flex items-center focus:outline-none"
+                className={`${
+                  isProgramActive(router.pathname)
+                    ? "flex items-center focus:outline-none text-red-500"
+                    : "flex items-center focus:outline-none text-gray-700"
+                } hover:text-red-500`}
               >
                 Programs
                 {!isProgramsOpen ? (
@@ -153,32 +177,37 @@ const Navbar = () => {
               </button>
               {isResourcesOpen && (
                 <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg py-2 z-10">
-                  <a
+                  <Link
                     href="#"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
                     Blog
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
                     Guides
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
                     Tutorials
-                  </a>
+                  </Link>
                 </div>
               )}
             </li>
 
             <li>
-              <a href="#" className="text-gray-700 hover:text-red-500">
+              <Link
+                href="/faqs"
+                className={`${
+                  isActive("/faqs") ? "text-red-500" : "text-gray-700"
+                } hover:text-red-500`}
+              >
                 FAQs
-              </a>
+              </Link>
             </li>
 
             {/* Contact Us Button for Mobile */}

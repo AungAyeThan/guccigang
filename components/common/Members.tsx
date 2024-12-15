@@ -43,8 +43,7 @@ const memberConfig = {
     title: "Lynn Myat Bhone Htut",
     subtitle: "Content & Visual Specialist",
     image: EImageUri.LynnMyat,
-    about:
-      "<p>Lynn, the youngest member of the UXMM, began his UX career when he was only 15 years old. In addition, he started working in the design industry as a freelancer .  As a result of his own studies in user interface and experience design, he is now working in the field. He got a job in S2T Corporation at Singapore when he was just 17 years old. <br/> <br/> He also has an interest in programming and game design. When he has spare time, his favorite things to do are do work on Visual Design and write articles about UX.</p>",
+    about: "<p>xx</p>",
   },
   thondary: {
     title: "Thon Dary Lwin",

@@ -25,7 +25,7 @@ const memberConfig = {
     image: EImageUri.WaiYiMonSoe,
     about:
       "<p>With over two decades of experience in Information & Communication Technology, she has a proven track record in delivering successful digital products and services. As a founder of the UXMM Community Organization, she is passionate about fostering a vibrant community of product designers and UX/UI professionals in Myanmar. She has a strong background in UX consulting, having worked with leading organizations like S2T Unlocking Cyberspace and Dynamics Therapy Group.</p>" +
-      "<p> Her areas of expertise include product design management, enterprise applications, and service design. She has been in the Information & Communication Technology field since 2001. She was previously held as Senior CX Manager of the Engineering Department in Oway Pte Ltd for managing product & project development in Oway Ride Team, and also managing UX Design team & front-end design and development team under Oway Travel.</p>",
+      "<br/> <p> Her areas of expertise include product design management, enterprise applications, and service design. She has been in the Information & Communication Technology field since 2001. She was previously held as Senior CX Manager of the Engineering Department in Oway Pte Ltd for managing product & project development in Oway Ride Team, and also managing UX Design team & front-end design and development team under Oway Travel.</p>",
   },
   lamin: {
     title: "La Min Thaw",
@@ -37,14 +37,14 @@ const memberConfig = {
     title: "Aung Aye Than",
     subtitle: "Development Specialist",
     image: EImageUri.AungAyeThan,
-    about: "",
+    about: "Just an IT guy who can't even fix a computer",
   },
   lynnmyat: {
     title: "Lynn Myat Bhone Htut",
     subtitle: "Content & Visual Specialist",
     image: EImageUri.LynnMyat,
     about:
-      "<p>Lynn, the youngest member of the UXMM, began his UX career when he was only 15 years old. In addition, he started working in the design industry as a freelancer .  As a result of his own studies in user interface and experience design, he is now working in the field. He got a job in S2T Corporation at Singapore when he was just 17 years old. He also has an interest in programming and game design. When he has spare time, his favorite things to do are do work on Visual Design and write articles about UX.</p>",
+      "<p>Lynn, the youngest member of the UXMM, began his UX career when he was only 15 years old. In addition, he started working in the design industry as a freelancer .  As a result of his own studies in user interface and experience design, he is now working in the field. He got a job in S2T Corporation at Singapore when he was just 17 years old. <br/> <br/> He also has an interest in programming and game design. When he has spare time, his favorite things to do are do work on Visual Design and write articles about UX.</p>",
   },
   thondary: {
     title: "Thon Dary Lwin",
@@ -52,7 +52,7 @@ const memberConfig = {
     image: EImageUri.ThonDaryLwin,
     about:
       "<p>Thon is an independent T-shaped product enthusiast with experience in launching digital products in fintech, e-commerce, and education. Her main focus is on strategic planning for growth products in startup industries by aligning with business goals and design decisions </p>" +
-      "<p>Thon is currently working at BlokID, analytic product company from Bangkok as UI/UX Designer and she also has held roles such as Senior UI/UX Designer at Dinger, where she optimized fintech products, and Lead UI Designer at Thate Pan Hub, where she created engaging, accessible designs for STEM education platforms. Thon is also an experienced mentor at MMPROJECT, having taught UI/UX concepts to diverse audiences, from young learners to professionals.</p>",
+      "<br/><p>Thon is currently working at BlokID, analytic product company from Bangkok as UI/UX Designer and she also has held roles such as Senior UI/UX Designer at Dinger, where she optimized fintech products, and Lead UI Designer at Thate Pan Hub, where she created engaging, accessible designs for STEM education platforms. Thon is also an experienced mentor at MMPROJECT, having taught UI/UX concepts to diverse audiences, from young learners to professionals.</p>",
   },
   htoo: {
     title: "Htoo Aung Shine",
@@ -77,7 +77,8 @@ const memberConfig = {
     title: "Aye Chan Pyae",
     subtitle: "Volunteer Member",
     image: EImageUri.AyeChanPyae,
-    about: "",
+    about:
+      "<p> Pyae has a strong foundation in MVP design with a focus on usability and extensive experience in the startup landscape. Currently leading the research program at UXMM, Pyae is dedicated to using research as a cornerstone for knowledge creation and driving innovation. <br/> <br/> A data-driven decision-maker, Pyae utilizes analytics to craft design strategies and manage products, effectively balancing business objectives with user needs. With experience collaborating with multicultural teams across various countries, Pyae brings a results-driven and collaborative approach to delivering impactful solutions. </p>",
   },
   thane: {
     title: "Thane Zaw Oo",

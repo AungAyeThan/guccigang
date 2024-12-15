@@ -6,13 +6,13 @@ import CardComponent from "../utils/Card";
 enum EImageUri {
   WaiYiMonSoe = "/images/waiyimonsoe.png",
   LaminThaw = "/images/laminthaw.jpg",
-  PhyoHeinKyaw = "/images/phyoheinkyaw.png",
   AungAyeThan = "/images/aungayethan.png",
-  SuMyatHnin = "/images/sumyathnin.png",
+  HtooAungShine = "/images/htooaungshine.jpg",
   LynnMyat = "/images/lynnmyat.png",
-  SuWintThida = "/images/suwintthida.png",
-  HninHaymar = "/images/hninhaymar.png",
-  Yemin = "/images/yemin.png",
+  AyeChanPyae = "/images/ayechanpyae.jpeg",
+  ThaneZawOo = "/images/thanezawoo.jpg",
+  Thiri = "/images/thiri.jpg",
+
   ShunPyaePyaeAung = "/images/shunpyaepyaeaung.png",
   ShuMawaSoe = "/images/shumawasoe.png",
   ThonDaryLwin = "/images/thondarylwin.png",
@@ -24,144 +24,201 @@ const memberConfig = {
     subtitle: "Founder",
     image: EImageUri.WaiYiMonSoe,
     about:
-      "I’ve been in the Information & Communication Technology field since 2001 and formal professional experiences of product & project design management, enterprise applications and service design especially in Digital Products. I'm currently as UX Consultant of S2T Software Company (Singapore) and also a founder of UXMM Community Organization (UXMM). UXMM is a non-profit organization building the only career growth platform focused on providing international technical knowledge, educational resources and passion for Product design, User Experience and User Interface designer across in Myanmar.",
+      "<p>With over two decades of experience in Information & Communication Technology, she has a proven track record in delivering successful digital products and services. As a founder of the UXMM Community Organization, she is passionate about fostering a vibrant community of product designers and UX/UI professionals in Myanmar. She has a strong background in UX consulting, having worked with leading organizations like S2T Unlocking Cyberspace and Dynamics Therapy Group.</p>" +
+      "<p> Her areas of expertise include product design management, enterprise applications, and service design. She has been in the Information & Communication Technology field since 2001. She was previously held as Senior CX Manager of the Engineering Department in Oway Pte Ltd for managing product & project development in Oway Ride Team, and also managing UX Design team & front-end design and development team under Oway Travel.</p>",
+  },
+  lamin: {
+    title: "La Min Thaw",
+    subtitle: "Co-Founder",
+    image: EImageUri.LaminThaw,
+    about: "",
+  },
+  aung: {
+    title: "Aung Aye Than",
+    subtitle: "Development Specialist",
+    image: EImageUri.AungAyeThan,
+    about: "",
+  },
+  lynnmyat: {
+    title: "Lynn Myat Bhone Htut",
+    subtitle: "Content & Visual Specialist",
+    image: EImageUri.LynnMyat,
+    about:
+      "<p>Lynn, the youngest member of the UXMM, began his UX career when he was only 15 years old. In addition, he started working in the design industry as a freelancer .  As a result of his own studies in user interface and experience design, he is now working in the field. He got a job in S2T Corporation at Singapore when he was just 17 years old. He also has an interest in programming and game design. When he has spare time, his favorite things to do are do work on Visual Design and write articles about UX.</p>",
+  },
+  thondary: {
+    title: "Thon Dary Lwin",
+    subtitle: "Content & Visual Specialist",
+    image: EImageUri.ThonDaryLwin,
+    about:
+      "<p>Thon is an independent T-shaped product enthusiast with experience in launching digital products in fintech, e-commerce, and education. Her main focus is on strategic planning for growth products in startup industries by aligning with business goals and design decisions </p>" +
+      "<p>Thon is currently working at BlokID, analytic product company from Bangkok as UI/UX Designer and she also has held roles such as Senior UI/UX Designer at Dinger, where she optimized fintech products, and Lead UI Designer at Thate Pan Hub, where she created engaging, accessible designs for STEM education platforms. Thon is also an experienced mentor at MMPROJECT, having taught UI/UX concepts to diverse audiences, from young learners to professionals.</p>",
+  },
+  htoo: {
+    title: "Htoo Aung Shine",
+    subtitle: "Volunteer Member",
+    image: EImageUri.HtooAungShine,
+    about:
+      "<p> Htoo Aung Shine is a UI/UX Designer who wants to create impactful design solutions for both businesses and users. With a solid background in graphic design, he has developed expertise in visual design, branding strategy, user interface, and user experience design. He is also focused on branding for sustainable businesses and continues to expand his knowledge in branding strategy and business management as part of his lifelong learning journey.</p>",
+  },
+  shumawa: {
+    title: "Shu Mawa Soe",
+    subtitle: "Program & Coordination Specialist",
+    image: EImageUri.ShuMawaSoe,
+    about: "",
+  },
+  shun: {
+    title: "Shun Pyae Pyae Aung",
+    subtitle: "Visual Specialist",
+    image: EImageUri.ShunPyaePyaeAung,
+    about: "",
+  },
+  ayechan: {
+    title: "Aye Chan Pyae",
+    subtitle: "Volunteer Member",
+    image: EImageUri.AyeChanPyae,
+    about: "",
+  },
+  thane: {
+    title: "Thane Zaw Oo",
+    subtitle: "Volunteer Member",
+    image: EImageUri.ThaneZawOo,
+    about: "",
+  },
+  thiri: {
+    title: "Thiri Phyo Naing",
+    subtitle: "Volunteer Member",
+    image: EImageUri.Thiri,
+    about: "",
   },
 };
 
 const Members: React.FC = () => {
-  const [isWaiYiModalOpen, setIsWaiYiModalOpen] = useState(false);
-  const [isAlvinModalOpen, setIsAlvinModalOpen] = useState(false);
+  const [openModal, setOpenModal] = useState<string | null>(null);
 
-  const openWaiYiModal = (person: string) => {
-    setIsWaiYiModalOpen(true);
+  const openModalHandler = (modalName: string) => {
+    setOpenModal(modalName);
   };
 
-  const closeWaiYiModal = (person: string) => {
-    setIsWaiYiModalOpen(false);
+  const closeModalHandler = () => {
+    setOpenModal(null);
   };
 
-  const openAlvinModal = (person: string) => {
-    setIsAlvinModalOpen(true);
-  };
-
-  const closeAlvinModal = (person: string) => {
-    setIsAlvinModalOpen(false);
-  };
+  const members = [
+    {
+      key: "waiyi",
+      title: memberConfig.waiyi.title,
+      subtitle: memberConfig.waiyi.subtitle,
+      image: memberConfig.waiyi.image,
+      modalImage: EImageUri.WaiYiMonSoe,
+      about: memberConfig.waiyi.about,
+    },
+    {
+      key: "alvin",
+      title: memberConfig.lamin.title,
+      subtitle: memberConfig.lamin.subtitle,
+      image: memberConfig.lamin.image,
+      modalImage: EImageUri.LaminThaw,
+      about: memberConfig.lamin.about,
+    },
+    {
+      key: "aung",
+      title: memberConfig.aung.title,
+      subtitle: memberConfig.aung.subtitle,
+      image: memberConfig.aung.image,
+      modalImage: EImageUri.AungAyeThan,
+      about: memberConfig.aung.about,
+    },
+    {
+      key: "lynnmyat",
+      title: memberConfig.lynnmyat.title,
+      subtitle: memberConfig.lynnmyat.subtitle,
+      image: memberConfig.lynnmyat.image,
+      modalImage: EImageUri.LynnMyat,
+      about: memberConfig.lynnmyat.about,
+    },
+    {
+      key: "thondary",
+      title: memberConfig.thondary.title,
+      subtitle: memberConfig.thondary.subtitle,
+      image: memberConfig.thondary.image,
+      modalImage: EImageUri.ThonDaryLwin,
+      about: memberConfig.thondary.about,
+    },
+    {
+      key: "shumawa",
+      title: memberConfig.shumawa.title,
+      subtitle: memberConfig.shumawa.subtitle,
+      image: memberConfig.shumawa.image,
+      modalImage: EImageUri.ShuMawaSoe,
+      about: memberConfig.shumawa.about,
+    },
+    {
+      key: "shun",
+      title: memberConfig.shun.title,
+      subtitle: memberConfig.shun.subtitle,
+      image: memberConfig.shun.image,
+      modalImage: EImageUri.ShunPyaePyaeAung,
+      about: memberConfig.shun.about,
+    },
+    {
+      key: "ayechan",
+      title: memberConfig.ayechan.title,
+      subtitle: memberConfig.ayechan.subtitle,
+      image: memberConfig.ayechan.image,
+      modalImage: EImageUri.AyeChanPyae,
+      about: memberConfig.ayechan.about,
+    },
+    {
+      key: "htoo",
+      title: memberConfig.htoo.title,
+      subtitle: memberConfig.htoo.subtitle,
+      image: memberConfig.htoo.image,
+      modalImage: EImageUri.HtooAungShine,
+      about: memberConfig.htoo.about,
+    },
+    {
+      key: "thane",
+      title: memberConfig.thane.title,
+      subtitle: memberConfig.thane.subtitle,
+      image: memberConfig.thane.image,
+      modalImage: EImageUri.ThaneZawOo,
+      about: memberConfig.thane.about,
+    },
+    {
+      key: "thiri",
+      title: memberConfig.thiri.title,
+      subtitle: memberConfig.thiri.subtitle,
+      image: memberConfig.thiri.image,
+      modalImage: EImageUri.Thiri,
+      about: memberConfig.thiri.about,
+    },
+  ];
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
-      {/* Each member card */}
-      <div className="p-1">
-        <div
-          className="flex items-center justify-center"
-          onClick={() => openWaiYiModal("waiyi")}
-        >
-          <CardComponent
-            title="Wai Yi Mon Soe"
-            subtitle="Founder"
-            image={memberConfig.waiyi.image}
+      {members.map((member) => (
+        <div className="p-1" key={member.key}>
+          <div
+            className="flex items-center justify-center"
+            onClick={() => openModalHandler(member.key)}
+          >
+            <CardComponent
+              title={member.title}
+              subtitle={member.subtitle}
+              image={member.image}
+            />
+          </div>
+          <ModalComponent
+            isOpen={openModal === member.key}
+            onClose={closeModalHandler}
+            title={member.title}
+            subtitle={member.subtitle}
+            image={member.modalImage}
+            about={member.about}
           />
         </div>
-        <ModalComponent
-          isOpen={isWaiYiModalOpen}
-          onClose={() => closeWaiYiModal("waiyi")}
-          title="Wai Yi Mon Soe"
-          subtitle="Founder"
-          image={EImageUri.WaiYiMonSoe}
-        />
-      </div>
-
-      <div className="p-1">
-        <div
-          className="flex items-center justify-center"
-          onClick={() => openAlvinModal("alvin")}
-        >
-          <CardComponent
-            title="La Min Thaw (Alvin)"
-            subtitle="Co-Founder"
-            image={EImageUri.LaminThaw}
-          />
-        </div>
-        <ModalComponent
-          isOpen={isAlvinModalOpen}
-          onClose={() => closeAlvinModal("alvin")}
-          title="La Min Thaw (Alvin)"
-          subtitle="Co-Founder"
-          image={EImageUri.LaminThaw}
-        />
-      </div>
-
-      {/* Add the rest of the members in a similar fashion */}
-      <div className="p-1">
-        <CardComponent
-          title="Phyo Hein Kyaw"
-          subtitle="Development Specialist"
-          image={EImageUri.PhyoHeinKyaw}
-        />
-      </div>
-      <div className="p-1">
-        <CardComponent
-          title="Aung Aye Than"
-          subtitle="Development Specialist"
-          image={EImageUri.AungAyeThan}
-        />
-      </div>
-      <div className="p-1">
-        <CardComponent
-          title="Su Myat Hnin"
-          subtitle="Visual Design Specialist"
-          image={EImageUri.SuMyatHnin}
-        />
-      </div>
-      <div className="p-1">
-        <CardComponent
-          title="Lynn Myat Bhone Htut"
-          subtitle="Content & Visual Specialist"
-          image={EImageUri.LynnMyat}
-        />
-      </div>
-      <div className="p-1">
-        <CardComponent
-          title="Su Wint Thida"
-          subtitle="Social Media Specialist"
-          image={EImageUri.SuWintThida}
-        />
-      </div>
-      <div className="p-1">
-        <CardComponent
-          title="Hnin Hay Mar Aung"
-          subtitle="Coordination Specialist"
-          image={EImageUri.HninHaymar}
-        />
-      </div>
-      <div className="p-1">
-        <CardComponent
-          title="Ye Min Ko Ko"
-          subtitle="Visual & Content Specialist"
-          image={EImageUri.Yemin}
-        />
-      </div>
-      <div className="p-1">
-        <CardComponent
-          title="Shunn Pyae Pyae Aung"
-          subtitle="Visual Design Specialist"
-          image={EImageUri.ShunPyaePyaeAung}
-        />
-      </div>
-      <div className="p-1">
-        <CardComponent
-          title="Shu Mawa Soe"
-          subtitle="Coordination Specialist"
-          image={EImageUri.ShuMawaSoe}
-        />
-      </div>
-      <div className="p-1">
-        <CardComponent
-          title="Thon Dary Lwin"
-          subtitle="Content & Visual Specialist"
-          image={EImageUri.ThonDaryLwin}
-        />
-      </div>
+      ))}
     </div>
   );
 };

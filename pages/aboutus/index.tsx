@@ -15,61 +15,31 @@ enum EImageUri {
 }
 
 const ImageCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleImages, setVisibleImages] = useState(4); // Default to 4 for desktop
-
-  const images: string[] = [
-    EImageUri.Slider1,
-    EImageUri.Slider2,
-    EImageUri.Slider3,
-    EImageUri.Slider4,
-    EImageUri.Slider5,
-  ];
+  const [isClient, setIsClient] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Function to update the number of visible images based on window size
-    const handleResize = () => {
-      if (window.innerWidth < 640) {
-        setVisibleImages(1);
-      } else {
-        setVisibleImages(4);
-      }
-    };
+    setIsClient(true);
 
-    // Call the function once to set the initial state
-    handleResize();
-
-    // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    setIsMobile(window.innerWidth < 768);
   }, []);
 
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length,
-    );
-  };
-
-  const getVisibleImages = () => {
-    const doubledImages = images.concat(images);
-    return doubledImages.slice(currentIndex, currentIndex + visibleImages);
-  };
-
+  if (!isClient) {
+    return null;
+  }
   return (
     <>
-      <div className="w-full max-w-5xl mx-auto py-8 div1 hidden md:block">
-        <DesktopSlider />
-      </div>
+      {isClient && !isMobile && (
+        <div className="w-full max-w-5xl mx-auto py-8 div1">
+          <DesktopSlider />
+        </div>
+      )}
 
-      <div className="w-full max-w-5xl mx-auto py-8 div2 block md:hidden">
-        <MobileSlider />
-      </div>
+      {isClient && isMobile && (
+        <div className="w-full max-w-5xl mx-auto py-8 div2">
+          <MobileSlider />
+        </div>
+      )}
 
       <div className="flex bg-white px-4 py-12">
         <div className="mx-auto flex max-w-5xl flex-col items-center md:flex-row md:justify-between">
@@ -82,7 +52,7 @@ const ImageCarousel = () => {
           </div>
           <div className="text-center md:mt-5 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
-              <p className="mb-1 sm:mb-1 text-2xl sm:text-3xl font-semibold">
+              <p className="mb-1 sm:mb-1 text-2xl sm:text-3xl leading-[42px] font-[600] font-plusJakarta">
                 Behind <span className="uxmm-text-color">UXMM</span>
               </p>
             </div>
@@ -114,9 +84,9 @@ const ImageCarousel = () => {
       </div>
 
       <div className="px-4 py-8 max-w-5xl mx-auto">
-        <h2 className="text-center text-2xl font-semibold text-gray-800 mb-8">
-          <span className="text-gray-800">Our </span>
-          <span className="text-red-500">Missions & Visions</span>
+        <h2 className="text-center text-[24px] font-[700] leading-[38px] mb-8 font-plusJakarta">
+          <span className="text-customgray">Our </span>
+          <span className="uxmm-text-color">Missions & Visions</span>
         </h2>
 
         <div className="flex flex-col md:flex-row md:justify-between md:gap-12 gap-8">
@@ -165,8 +135,8 @@ const ImageCarousel = () => {
       <OurValue />
 
       <div className="bg-gray-100 p-5">
-        <p className="text-center text-[24px] font-[700] leading-[38px] mb-[15px]">
-          Meet Our <span className="uxmm-text">Members</span>
+        <p className="text-center text-[24px] font-[700] leading-[38px] mb-[15px] font-plusJakarta">
+          Meet Our Dedicated <span className="uxmm-text-color">Core Team</span>
         </p>
         <div className="flex justify-center">
           <Members />

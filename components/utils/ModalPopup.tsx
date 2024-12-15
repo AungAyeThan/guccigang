@@ -6,6 +6,7 @@ interface ModalProps {
   title: string;
   subtitle: string;
   image: string;
+  about: string;
 }
 
 const ModalComponent: React.FC<ModalProps> = ({
@@ -14,6 +15,7 @@ const ModalComponent: React.FC<ModalProps> = ({
   title,
   subtitle,
   image,
+  about,
 }) => {
   // Prevent scrolling when the modal is open
   useEffect(() => {
@@ -46,7 +48,9 @@ const ModalComponent: React.FC<ModalProps> = ({
       <div className="bg-white p-4 md:p-6 rounded-lg shadow-md z-10 w-full max-w-md mx-4">
         {/* Modal header */}
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-semibold">{title}</h2>
+          <h2 className="text-[32px] leading-[42px] font-[700] font-plusJakarta">
+            Member Profile
+          </h2>
           <button
             onClick={onClose}
             className="rounded-full flex items-center justify-center text-gray-700 bg-gray-200 hover:bg-gray-300 p-2"
@@ -65,8 +69,12 @@ const ModalComponent: React.FC<ModalProps> = ({
           />
         </div>
 
+        <p className="text-[24px] text-center leading-[38px] font-[700] mb-2 text-customgray font-plusJakarta">
+          {title}
+        </p>
+
         {/* Modal subtitle */}
-        <p className="text-gray-600 text-[14px] text-center leading-[22px] font-[400] mb-2">
+        <p className="text-[16px] text-center leading-[26px] font-[500] mb-2 uxmm-text-color font-poppins">
           {subtitle}
         </p>
 
@@ -82,17 +90,8 @@ const ModalComponent: React.FC<ModalProps> = ({
 
         {/* Modal scrollable content */}
         <div className="max-h-[200px] md:max-h-[250px] overflow-y-auto">
-          <p className="text-gray-600 text-[14px] leading-[22px] font-[400] text-center">
-            I’ve been in the Information & Communication Technology field since
-            2001 and formal professional experiences of product & project design
-            management, enterprise applications, and service design, especially
-            in Digital Products. I'm currently a UX Consultant at S2T Software
-            Company (Singapore) and also a founder of UXMM Community
-            Organization (UXMM). UXMM is a non-profit organization building the
-            only career growth platform focused on providing international
-            technical knowledge, educational resources, and passion for Product
-            design, User Experience, and User Interface design across in
-            Myanmar.
+          <p className="text-gray-600 text-[14px] leading-[22px] font-[400]">
+            <p dangerouslySetInnerHTML={{ __html: about }} />
           </p>
         </div>
       </div>

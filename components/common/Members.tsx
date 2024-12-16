@@ -31,7 +31,8 @@ const memberConfig = {
     title: "La Min Thaw",
     subtitle: "Co-Founder",
     image: EImageUri.LaminThaw,
-    about: "",
+    about:
+      "<p>With over a decade of dedication to the UI/UX domain, Alvin has led innovative design solutions at Citizens Pay while also mentoring the next generation of designers as a Co-Founder at UXMM. His team consistently delivers products that resonate with users, ensuring seamless digital experiences that are both intuitive and impactful <br><br>. At the intersection of creativity and user-centered design, Alvin champions a collaborative approach that leverages collective insights to refine and elevate product requirements. His focus extends beyond aesthetics to crafting interactions that empower and engage customers, demonstrating a profound commitment to excellence in every facet of the digital landscape",
   },
   aung: {
     title: "Aung Aye Than",

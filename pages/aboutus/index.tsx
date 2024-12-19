@@ -4,6 +4,7 @@ import Members from "../../components/common/Members";
 import GetInTouch from "../../components/GetInTouch";
 import DesktopSlider from "@/components/Carousel/desktop";
 import MobileSlider from "@/components/Carousel/mobile";
+import WhatWeDo from "@/components/WhatWeDo";
 
 enum EImageUri {
   Slider1 = "/images/slider1.png",
@@ -134,9 +135,12 @@ const ImageCarousel = () => {
 
       <OurValue />
 
+      <WhatWeDo />
+
       <div className="bg-gray-100 p-5">
         <p className="text-center text-[24px] font-[700] leading-[38px] mb-[15px] font-plusJakarta">
-          Meet Our Dedicated <span className="uxmm-text-color">Core Team</span>
+          The Heart of UXMM:{" "}
+          <span className="uxmm-text-color">Our Core Team</span>
         </p>
         <div className="flex justify-center">
           <Members />

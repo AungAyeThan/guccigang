@@ -23,7 +23,7 @@ export default function Home() {
           <div className="mb-8 text-center md:mb-0 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
               <h1 className="uxmm-text-color font-[700] text-[40px] lending-[54px] mb-4 font-plusJakarta md:w-[80%]">
-                Expowering Myanmar’s Design Community
+                Empowering Myanmar's Design Community
               </h1>
               {/* This doodle will now be positioned using absolute positioning */}
               <div
@@ -44,7 +44,7 @@ export default function Home() {
                 className="h-auto max-w-full"
               />
             </div>
-            <p className="md:max-w-md font-poppins text-[16px] font-[400] leading-[26px] text-customgray mt-5 md:py-0 text-left">
+            <p className="md:max-w-lg font-poppins text-[16px] font-[400] leading-[26px] text-customgray mt-5 md:py-0 text-left">
               UXMM is a pioneering non-profit organization established in 2020.
               Driven by a dedicated team of volunteers, we've been empowering
               Myanmar's design community and fostering a culture of innovation
@@ -93,9 +93,12 @@ export default function Home() {
               <span className="uxmm-text-color font-plusJakarta">UXMM</span>
             </h2>
             <p className="mb-6 text-center font-poppins text-[16px] font-[400] leading-[26px] text-customgray">
-              UXMM empowers UX design in Myanmar through our career growth
-              platform, offering technical knowledge, educational resources, and
-              community engagement.
+              UXMM is a dynamic non-profit organization dedicated to advancing
+              the design field in Myanmar. We're committed to providing valuable
+              resources, education, and networking opportunities for designers.
+              As a volunteer-led organization, we're passionate about empowering
+              the next generation of design talent and focused on fostering
+              innovation, collaboration, and a supportive community.
             </p>
             <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-center">
               <button className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg">
@@ -117,8 +120,8 @@ export default function Home() {
         </div>
       </div>
 
-      <p className="mt-3 text-center text-[24px] font-[700] leading-[38px] sm:mt-4">
-        Latest <span className="uxmm-text-color">Event</span>
+      <p className="mt-3 text-center text-[24px] font-[700] leading-[38px] sm:mt-4 font-plusJakarta">
+        Community <span className="uxmm-text-color">Event</span>
       </p>
 
       <div className="flex justify-center md:hidden md:w-1/2 md:justify-end px-4 py-4">
@@ -159,7 +162,7 @@ export default function Home() {
 
             {/* Button */}
             <button className="mt-4 rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg">
-              Register Now &rarr;
+              View All Events &rarr;
             </button>
           </div>
 

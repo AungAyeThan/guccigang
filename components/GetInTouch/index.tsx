@@ -8,7 +8,7 @@ enum EImageUri {
 const GetInTouch = () => {
   return (
     <div className="bg-pink-50 py-12 px-4 text-center">
-      <h2 className="text-[36px] lending-[40px] text-center font-[700] font-plusJakarta">
+      <h2 className="text-[36px] leading-[40px] text-center font-[700] font-plusJakarta">
         <span className="text-customgray">Get In</span>{" "}
         <span className="uxmm-text-color">Touch</span>
       </h2>

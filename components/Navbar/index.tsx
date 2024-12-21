@@ -35,13 +35,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:flex md:items-center md:justify-between">
         {/* Logo */}
         <div className="flex justify-between items-center py-4 md:py-0 md:mr-8">
-          <Link href="/" className="text-red-500 font-bold text-xl">
+          <a href="/" className="text-red-500 font-bold text-xl">
             <img
               src={EImageUri.UxmmLogo}
               alt="uxmm"
               className="h-auto max-w-full"
             />
-          </Link>
+          </a>
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -68,24 +68,24 @@ const Navbar = () => {
         >
           <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 font-poppins text-base font-normal leading-6 text-left">
             <li>
-              <Link
+              <a
                 href="/"
                 className={`${
                   isActive("/") ? "text-red-500" : "text-gray-700"
                 } hover:text-red-500`}
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="/aboutus"
                 className={`${
                   isActive("/aboutus") ? "text-red-500" : "text-gray-700"
                 } hover:text-red-500`}
               >
                 About Us
-              </Link>
+              </a>
             </li>
 
             {/* Programs Menu Item with Click Dropdown */}
@@ -162,7 +162,7 @@ const Navbar = () => {
                 onClick={toggleResourcesDropdown}
                 className="text-gray-700 hover:text-red-500 flex items-center focus:outline-none"
               >
-                Resources
+                Events
                 <svg
                   className="ml-1 w-4 h-4"
                   fill="currentColor"
@@ -177,37 +177,37 @@ const Navbar = () => {
               </button>
               {isResourcesOpen && (
                 <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg py-2 z-10">
-                  <Link
-                    href="#"
+                  <a
+                    href="/blog"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
                     Blog
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href="#"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
                     Guides
-                  </Link>
-                  <Link
-                    href="#"
+                  </a>
+                  <a
+                    href="/events"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Tutorials
-                  </Link>
+                    Events
+                  </a>
                 </div>
               )}
             </li>
 
             <li>
-              <Link
+              <a
                 href="/faqs"
                 className={`${
                   isActive("/faqs") ? "text-red-500" : "text-gray-700"
                 } hover:text-red-500`}
               >
                 FAQs
-              </Link>
+              </a>
             </li>
 
             {/* Contact Us Button for Mobile */}

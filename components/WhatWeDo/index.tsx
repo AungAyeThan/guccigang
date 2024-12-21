@@ -8,7 +8,7 @@ const WhatWeDo = () => {
       <div className="flex flex-col md:flex-row items-start gap-6">
         {/* Left Section: Title */}
         <div className="md:w-2/4 text-right mr-5">
-          <h2 className="text-[24px] lending-[38px] font-[700] font-plusJakarta font-bold mb-2">
+          <h2 className="text-[24px] leading-[38px] font-[700] font-plusJakarta font-bold mb-2">
             <span>What </span>
             <span className="uxmm-text-color">We Do</span>
           </h2>
@@ -22,35 +22,35 @@ const WhatWeDo = () => {
         {/* Right Section: Events List */}
         <div className="md:w-2/3 space-y-6">
           <div>
-            <h3 className="text-[16px] font-poppins font-semibold lending-[26px] font-[600] uxmm-text-color">
+            <h3 className="text-[16px] font-poppins font-semibold leading-[26px] font-[600] uxmm-text-color">
               Community Events
             </h3>
-            <p className="text-customgray font-poppins text-[14px] lending-[22px] font-[400]">
+            <p className="text-customgray font-poppins text-[14px] leading-[22px] font-[400]">
               Organize regular online & offline meetups, conferences, and
               workshops.
             </p>
           </div>
           <div>
-            <h3 className="text-[16px] font-poppins font-semibold lending-[26px] font-[600] uxmm-text-color">
+            <h3 className="text-[16px] font-poppins font-semibold leading-[26px] font-[600] uxmm-text-color">
               Mentorship
             </h3>
-            <p className="text-customgray font-poppins text-[14px] lending-[22px] font-[400]">
+            <p className="text-customgray font-poppins text-[14px] leading-[22px] font-[400]">
               Offer mentorship programs for aspiring designers.
             </p>
           </div>
           <div>
-            <h3 className="text-[16px] font-poppins font-semibold lending-[26px] font-[600] uxmm-text-color">
+            <h3 className="text-[16px] font-poppins font-semibold leading-[26px] font-[600] uxmm-text-color">
               Education
             </h3>
-            <p className="text-customgray font-poppins text-[14px] lending-[22px] font-[400]">
+            <p className="text-customgray font-poppins text-[14px] leading-[22px] font-[400]">
               Provide courses, workshops, bootcamps, and training programs.
             </p>
           </div>
           <div>
-            <h3 className="text-[16px] font-poppins font-semibold lending-[26px] font-[600] uxmm-text-color">
+            <h3 className="text-[16px] font-poppins font-semibold leading-[26px] font-[600] uxmm-text-color">
               Volunteer Opportunities
             </h3>
-            <p className="text-customgray font-poppins text-[14px] lending-[22px] font-[400]">
+            <p className="text-customgray font-poppins text-[14px] leading-[22px] font-[400]">
               Engage volunteers in various initiatives.
             </p>
           </div>

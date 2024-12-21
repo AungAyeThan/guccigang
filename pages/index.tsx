@@ -22,7 +22,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col items-center md:flex-row md:justify-between">
           <div className="mb-8 text-center md:mb-0 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
-              <h1 className="uxmm-text-color font-[700] text-[40px] lending-[54px] mb-4 font-plusJakarta md:w-[80%]">
+              <h1 className="uxmm-text-color font-[700] text-[40px] leading-[54px] mb-4 font-plusJakarta md:w-[80%]">
                 Empowering Myanmar's Design Community
               </h1>
               {/* This doodle will now be positioned using absolute positioning */}
@@ -88,7 +88,7 @@ export default function Home() {
 
           {/* Middle Text Section */}
           <div className="text-center max-w-lg">
-            <h2 className="text-[24px] lending-[38px] font-[700] font-bold text-customgray mb-4">
+            <h2 className="text-[24px] leading-[38px] font-[700] font-bold text-customgray mb-4">
               About{" "}
               <span className="uxmm-text-color font-plusJakarta">UXMM</span>
             </h2>
@@ -136,7 +136,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col items-start md:flex-row md:justify-between md:pl-[100px]">
           <div className="mb-7 text-center md:text-left">
             <div className="flex items-center justify-between">
-              <h2 className="font-poppins text-[16px] lending-[26px] font-[400] text-mildGray mt-10">
+              <h2 className="font-poppins text-[16px] leading-[26px] font-[400] text-mildGray mt-10">
                 Physical Workshop
               </h2>
               {/* This doodle will now be positioned using absolute positioning */}

@@ -8,11 +8,11 @@ enum EImageUri {
 const Partners = () => {
   return (
     <div className="bg-white py-8 px-4 md:px-16">
-      <h2 className="text-center font-[700] lending-[38px] text-[24px] font-plusJakarta">
+      <h2 className="text-center font-[700] leading-[38px] text-[24px] font-plusJakarta">
         <span className="text-customgray">Our</span>{" "}
         <span className="uxmm-text-color">Partners</span>
       </h2>
-      <p className="mt-4 text-center text-customgray font-poppins text-[16px] lending-[26px] font-[400]">
+      <p className="mt-4 text-center text-customgray font-poppins text-[16px] leading-[26px] font-[400]">
         Join our growing network of
         <span className="uxmm-text-color"> local</span> and{" "}
         <span className="uxmm-text-color">international partners</span>

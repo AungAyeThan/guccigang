@@ -59,7 +59,8 @@ const Events = () => {
     const filteredEvents =
       selectedTag === "all"
         ? Object.values(pastEvents).flat()
-        : pastEvents[selectedTag] || [];
+        : // @ts-ignore
+          pastEvents[selectedTag] || []; // @ts-ignore
 
     return filteredEvents.map((event, index) => (
       <PastEvent

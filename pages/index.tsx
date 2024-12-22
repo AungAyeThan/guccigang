@@ -101,9 +101,12 @@ export default function Home() {
               innovation, collaboration, and a supportive community.
             </p>
             <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-center">
-              <button className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg">
+              <a
+                href="/aboutus"
+                className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg inline-block"
+              >
                 About Us &rarr;
-              </button>
+              </a>
             </div>
           </div>
 
@@ -161,9 +164,12 @@ export default function Home() {
             </p>
 
             {/* Button */}
-            <button className="mt-4 rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg">
+            <a
+              href="/events"
+              className="mt-4 inline-block rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg text-center"
+            >
               View All Events &rarr;
-            </button>
+            </a>
           </div>
 
           {/* Right Section: Image */}

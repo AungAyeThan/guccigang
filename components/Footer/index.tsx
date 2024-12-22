@@ -56,21 +56,21 @@ const Footer = () => {
         <div className="md:ml-[110px] md:mt-[50px]">
           <h3 className="text-gray-800 font-medium mb-4">Social Media</h3>
           <div className="flex space-x-4">
-            <a href="#">
+            <a href="https://www.facebook.com/uxmyanmar">
               <img
                 src={EImageUri.FacebookIcon}
                 alt="Facebook"
                 className="w-6 h-6 hover:opacity-80"
               />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/uxmm">
               <img
                 src={EImageUri.LinkedInIcon}
                 alt="LinkedIn"
                 className="w-6 h-6 hover:opacity-80"
               />
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/@uxmyanmar">
               <img
                 src={EImageUri.YouTubeIcon}
                 alt="YouTube"
@@ -84,14 +84,14 @@ const Footer = () => {
         <div className="md:mt-[50px]">
           <h3 className="text-gray-800 font-medium mb-4">Podcast</h3>
           <div className="flex flex-wrap gap-4">
-            <a href="#">
+            <a href="https://podcasts.apple.com/my/podcast/uxmm/id1523879034">
               <img
                 src={EImageUri.ApplePodcast}
                 alt="Apple Podcast"
                 className="w-6 h-6 hover:opacity-80"
               />
             </a>
-            <a href="#">
+            <a href="https://open.spotify.com/show/07LdwCcIgw4h550axPQrLp?si=0cc3486ab65a44d1">
               <img
                 src={EImageUri.SpotifyIcon}
                 alt="Spotify"

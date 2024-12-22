@@ -1,15 +1,27 @@
 import GetInTouch from "@/components/GetInTouch";
 import React, { useState } from "react";
+
 enum EImageUri {
   DoodleAsset1 = "/images/mentor-doodle.png",
   DoodleAsset2 = "/images/doddle-asset-2.png",
   WavyBackground = "/images/wavy-background.png",
 }
-const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+const FAQ = () => {
+  const [openIndexes, setOpenIndexes] = useState<{
+    [key: string]: number | null;
+  }>({
+    general: null,
+    mentorship: null,
+    partnership: null,
+    volunteer: null,
+  });
+
+  const toggleFAQ = (section: string, index: number) => {
+    setOpenIndexes((prevState) => ({
+      ...prevState,
+      [section]: prevState[section] === index ? null : index,
+    }));
   };
 
   const generalFaqs = [
@@ -131,7 +143,6 @@ const FAQ = () => {
     <>
       <div className="flex flex-col items-center text-center px-6 py-12 md:px-16 mt-20">
         {/* Title */}
-
         <div className="">
           <h1 className="text-3xl md:text-5xl font-bold leading-[54px] text-[40px]">
             Frequently Asked <span className="uxmm-text-color">Questions</span>
@@ -161,41 +172,33 @@ const FAQ = () => {
         </div>
       </div>
 
-      <div
-        className="mt-[0px] absolute inset-0 bg-no-repeat bg-center bg-contain opacity-500"
-        style={{
-          backgroundImage: `url(${EImageUri.WavyBackground})`,
-        }}
-      ></div>
-
-      <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8 mt-[140px]">
-        {/* Left Section (General FAQs Info) */}
+      {/* General FAQs Section */}
+      <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-3xl font-bold mb-4">General FAQs</h2>
           <p className="text-gray-600">
-            Everything you need to know about UXMM and how it works. Can’t find
-            the answer? Please send us your opinions.
+            Everything you need to know about UXMM’s General program and how it
+            works. Can’t find answer? Please send us your opinions.
           </p>
         </div>
 
-        {/* Right Section (Questions) */}
         <div className="space-y-4">
           {generalFaqs.map((faq, index) => (
             <div key={index} className="border rounded-lg overflow-hidden">
               <button
                 className="w-full text-left p-4 hover:bg-gray-200 focus:outline-none"
-                onClick={() => toggleFAQ(index)}
+                onClick={() => toggleFAQ("general", index)}
               >
                 <div className="flex justify-between items-center">
                   <span className="font-medium text-gray-800">
                     {faq.question}
                   </span>
                   <span className="text-gray-500">
-                    {openIndex === index ? "▲" : "▼"}
+                    {openIndexes.general === index ? "▲" : "▼"}
                   </span>
                 </div>
               </button>
-              {openIndex === index && (
+              {openIndexes.general === index && (
                 <div className="p-4 text-gray-700 bg-white">{faq.answer}</div>
               )}
             </div>
@@ -203,8 +206,8 @@ const FAQ = () => {
         </div>
       </div>
 
+      {/* Mentorship FAQs Section */}
       <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Left Section (General FAQs Info) */}
         <div>
           <h2 className="text-3xl font-bold mb-4">Mentorship FAQs</h2>
           <p className="text-gray-600">
@@ -213,24 +216,23 @@ const FAQ = () => {
           </p>
         </div>
 
-        {/* Right Section (Questions) */}
         <div className="space-y-4">
           {membershipFaqs.map((faq, index) => (
             <div key={index} className="border rounded-lg overflow-hidden">
               <button
                 className="w-full text-left p-4 hover:bg-gray-200 focus:outline-none"
-                onClick={() => toggleFAQ(index)}
+                onClick={() => toggleFAQ("mentorship", index)}
               >
                 <div className="flex justify-between items-center">
                   <span className="font-medium text-gray-800">
                     {faq.question}
                   </span>
                   <span className="text-gray-500">
-                    {openIndex === index ? "▲" : "▼"}
+                    {openIndexes.mentorship === index ? "▲" : "▼"}
                   </span>
                 </div>
               </button>
-              {openIndex === index && (
+              {openIndexes.mentorship === index && (
                 <div className="p-4 text-gray-700 bg-white">{faq.answer}</div>
               )}
             </div>
@@ -238,8 +240,8 @@ const FAQ = () => {
         </div>
       </div>
 
+      {/* Partnership FAQs Section */}
       <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Left Section (General FAQs Info) */}
         <div>
           <h2 className="text-3xl font-bold mb-4 font-plusJakarta">
             Partnership FAQs
@@ -250,24 +252,23 @@ const FAQ = () => {
           </p>
         </div>
 
-        {/* Right Section (Questions) */}
         <div className="space-y-4">
           {partnershipFaqs.map((faq, index) => (
             <div key={index} className="border rounded-lg overflow-hidden">
               <button
                 className="w-full text-left p-4 hover:bg-gray-200 focus:outline-none"
-                onClick={() => toggleFAQ(index)}
+                onClick={() => toggleFAQ("partnership", index)}
               >
                 <div className="flex justify-between items-center">
                   <span className="font-medium text-gray-800">
                     {faq.question}
                   </span>
                   <span className="text-gray-500">
-                    {openIndex === index ? "▲" : "▼"}
+                    {openIndexes.partnership === index ? "▲" : "▼"}
                   </span>
                 </div>
               </button>
-              {openIndex === index && (
+              {openIndexes.partnership === index && (
                 <div className="p-4 text-gray-700 bg-white">{faq.answer}</div>
               )}
             </div>
@@ -275,36 +276,33 @@ const FAQ = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Left Section (General FAQs Info) */}
+      {/* Volunteer FAQs Section */}
+      <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         <div>
-          <h2 className="text-3xl font-bold mb-4 font-plusJakarta">
-            Volunteer FAQs
-          </h2>
-          <p className="text-customgray font-poppins">
-            Everything you need to know about UXMM’s Volunteer program and how
-            it works. Can’t find answer? Please send us your opinions.
+          <h2 className="text-3xl font-bold mb-4">Volunteer FAQs</h2>
+          <p className="text-customgray">
+            Everything you need to know about UXMM’s volunteer program and how
+            it works. Can’t find the answer? Please send us your opinions.
           </p>
         </div>
 
-        {/* Right Section (Questions) */}
         <div className="space-y-4">
           {volunteerFaqs.map((faq, index) => (
             <div key={index} className="border rounded-lg overflow-hidden">
               <button
                 className="w-full text-left p-4 hover:bg-gray-200 focus:outline-none"
-                onClick={() => toggleFAQ(index)}
+                onClick={() => toggleFAQ("volunteer", index)}
               >
                 <div className="flex justify-between items-center">
                   <span className="font-medium text-gray-800">
                     {faq.question}
                   </span>
                   <span className="text-gray-500">
-                    {openIndex === index ? "▲" : "▼"}
+                    {openIndexes.volunteer === index ? "▲" : "▼"}
                   </span>
                 </div>
               </button>
-              {openIndex === index && (
+              {openIndexes.volunteer === index && (
                 <div className="p-4 text-gray-700 bg-white">{faq.answer}</div>
               )}
             </div>
@@ -312,6 +310,7 @@ const FAQ = () => {
         </div>
       </div>
 
+      {/* Get In Touch Section */}
       <GetInTouch />
     </>
   );

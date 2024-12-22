@@ -1,10 +1,9 @@
 import React from "react";
-import Volunteer from "../volunteer";
 import GetInTouch from "@/components/GetInTouch";
-import OurValue from "@/components/OurValue";
-import Partners from "@/components/Partners";
+
 enum EImageUri {
   GroupPic = "/images/group-pic.png",
+  Speaker = "/images/speaker.png",
   PartnerProgram = "/images/partner-program.png",
   MentorProgram = "/images/mentor-program.png",
   VolunteerProgram = "/images/volunteer-program.png",
@@ -22,8 +21,9 @@ const Speaker = () => {
         </div>
 
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-bold leading-[54px] text-[40px]">
-          Become a <span className="uxmm-text-color">Speaker</span>
+        <h1 className="font-[700] leading-[54px] text-[40px] w-[45%] font-plusJakarta text-center">
+          Inspire the Next Generation as a{" "}
+          <span className="uxmm-text-color">UX Speaker</span>
         </h1>
         <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[85%] lg:left-[72%]  hidden md:block">
           <img
@@ -35,9 +35,9 @@ const Speaker = () => {
 
         {/* Description */}
         <p className="md:text-[16px] leading-[26px] mt-4 font-poppins text-customgray md:w-[41%]">
-          Becoming a speaker with UXMM can provide you with an opportunity to
-          share your expertise and insights with a community of UX professionals
-          and enthusiasts in Myanmar.
+          Become a speaker at our events and share your knowledge with the UX
+          community. By presenting on your area of expertise, you'll inspire and
+          educate others while making a positive impact on the future of design.
         </p>
 
         <button className="mt-6 px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:from-pink-600 hover:to-red-600 transition">
@@ -56,38 +56,47 @@ const Speaker = () => {
         <div className="mx-auto flex max-w-5xl flex-col items-center md:flex-row md:justify-between">
           <div className="flex hidden justify-center md:block md:w-1/2 md:justify-end">
             <img
-              src={EImageUri.GroupPic}
+              src={EImageUri.Speaker}
               alt="uxmm"
               className="h-auto max-w-full"
             />
           </div>
-          <div className="text-center md:mt-5 md:w-1/2 md:text-left">
+          <div className="md:mt-5 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
               <p className="text-[32px] font-semibold leading-[42px] text-left font-plusJakarta">
                 Benefits of becoming a{" "}
-                <span className="uxmm-text-color">speaker with UXMM</span>
+                <span className="uxmm-text-color">Speaker with UXMM</span>
               </p>
             </div>
             <div className="block flex justify-center md:hidden md:w-1/2 md:justify-end mt-5">
               <img
-                src={EImageUri.GroupPic}
+                src={EImageUri.Speaker}
                 alt="uxmm"
                 className="h-auto max-w-full"
               />
             </div>
-            <p className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0">
-              As a speaker, you will have the opportunity to share your
-              knowledge and experience through talks, workshops, or other events
-              organized by UXMM. You will be able to showcase your expertise in
-              UX design, research, or strategy and share your insights on the
-              latest trends and best practices in the industry.
-            </p>
-            <p className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0">
-              Being a speaker with UXMM can also help you to expand your
-              professional network and visibility in the UX community. You will
-              have the opportunity to connect with other industry leaders and
-              potentially attract new clients or career opportunities.
-            </p>
+            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0 list-disc list-inside">
+              <li>
+                <b>Increase your visibility:</b> Reach a wider audience of
+                designers and industry professionals.
+              </li>
+              <li>
+                <b>Network with peers:</b> Connect with other experienced UX
+                professionals.
+              </li>
+              <li>
+                <b>Enhance your reputation:</b> Establish yourself as a thought
+                leader in the field.
+              </li>
+              <li>
+                <b>Inspire others:</b> Share your passion for UX and motivate
+                others to pursue their goals.
+              </li>
+              <li>
+                <b>Give back to the community/Share your knowledge:</b>{" "}
+                Contribute to the development of the UX community.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -110,8 +119,6 @@ const Speaker = () => {
 
         {/* Right Decorative Dots */}
       </div>
-
-      <Partners />
 
       <h2 className="text-center text-2xl md:text-3xl font-semibold mb-8 mt-[80px]">
         Browse <span className="text-red-500">another programs</span> that we
@@ -136,10 +143,10 @@ const Speaker = () => {
                 Partner Program
               </h2>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
-                Becoming a mentor with UXMM can provide you with an opportunity
-                to share your expertise and knowledge with others, while also
-                building your professional network and enhancing your leadership
-                skills.
+                Becoming a partner with UXMM can provide you with an opportunity
+                to connect with a community of UX professionals and enthusiasts,
+                as well as promote your brand or product to a highly engaged
+                audience.
               </p>
             </div>
             <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">

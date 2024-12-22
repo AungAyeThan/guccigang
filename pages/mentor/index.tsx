@@ -1,13 +1,14 @@
 import GetInTouch from "@/components/GetInTouch";
 import React from "react";
 import Partners from "@/components/Partners";
+import Members from "@/components/common/Members";
 enum EImageUri {
-  GroupPic = "/images/group-pic.png",
   SpeakerProgram = "/images/speaker-program.png",
   PartnerProgram = "/images/partner-program.png",
   VolunteerProgram = "/images/volunteer-program.png",
   DoodleAsset1 = "/images/mentor-doodle.png",
   DoodleAsset2 = "/images/doddle-asset-2.png",
+  Mentorship = "/images/mentorship.png",
 }
 
 const MentorSection = () => {
@@ -37,10 +38,10 @@ const MentorSection = () => {
         </div>
 
         {/* Description */}
-        <p className="text-customgray md:text-[16px] leading-[26px] mt-4 font-poppins md:w-[41%]">
-          Becoming a mentor with UXMM can provide you with an opportunity to
-          share your expertise and knowledge with others, while also building
-          your professional network and enhancing your leadership skills.
+        <p className="text-customgray md:text-[16px] leading-[26px] mt-4 font-poppins md:w-[41%] text-center">
+          Become a mentor and help aspiring UX designers reach their full
+          potential. By sharing your insights and experiences, you'll contribute
+          to the growth and development of the UX community in Myanmar.
         </p>
 
         <button className="mt-6 px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:from-pink-600 hover:to-red-600 transition">
@@ -60,34 +61,50 @@ const MentorSection = () => {
         <div className="mx-auto flex max-w-5xl flex-col items-center md:flex-row md:justify-between">
           <div className="flex hidden justify-center md:block md:w-1/2 md:justify-end">
             <img
-              src={EImageUri.GroupPic}
+              src={EImageUri.Mentorship}
               alt="uxmm"
               className="h-auto max-w-full"
             />
           </div>
-          <div className="text-center md:mt-5 md:w-1/2 md:text-left">
+          <div className="md:mt-5 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
-              <p className="text-[32px] font-semibold leading-[42px] text-left font-plusJakarta">
+              <p className="text-center text-[32px] font-semibold leading-[42px] text-left font-plusJakarta">
                 Benefits of becoming a{" "}
                 <span className="uxmm-text-color">mentor with UXMM</span>
               </p>
             </div>
             <div className="block flex justify-center md:hidden md:w-1/2 md:justify-end mt-5">
               <img
-                src={EImageUri.GroupPic}
+                src={EImageUri.Mentorship}
                 alt="uxmm"
                 className="h-auto max-w-full"
               />
             </div>
-            <p className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0">
-              As a mentor, you will work with UX enthusiasts who are looking to
-              develop their skills and grow in their careers. You will provide
-              guidance, support, and feedback to help them achieve their goals
-              and advance in their careers. This can be a highly rewarding
-              experience, as you will have the opportunity to share your
-              knowledge and expertise, while also making a positive impact on
-              the UX community.
-            </p>
+            <ul className="max-w-md font-poppins text-[16px]  leading-[26px] text-customgray mt-7 md:py-0 list-disc list-inside">
+              <li>
+                <b>Inspire the next generation:</b> Make a positive impact on
+                the careers of young designers.
+              </li>
+              <li>
+                <b>Network with peers:</b> Connect with other experienced UX
+                professionals.
+              </li>
+              <li>
+                <b>Enhance your reputation:</b> Establish yourself as a thought
+                leader in the field.
+              </li>
+              <li>
+                <b>Give back to the community:</b> Contribute to the development
+                of the UX community in Myanmar.
+              </li>
+              <li>
+                <b>Develop your leadership skills:</b> Guide and inspire others.
+              </li>
+              <li>
+                <b>Stay connected to the industry:</b> Stay up-to-date on the
+                latest trends and best practices.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -111,7 +128,16 @@ const MentorSection = () => {
         {/* Right Decorative Dots */}
       </div>
 
-      <Partners />
+      <div className="bg-gray-100 p-5">
+        <p className="text-center text-[24px] font-[700] leading-[38px] mb-[15px] font-plusJakarta">
+          The Heart of UXMM:{" "}
+          <span className="uxmm-text-color block sm:inline">Our Core Team</span>
+        </p>
+
+        <div className="flex justify-center">
+          <Members />
+        </div>
+      </div>
 
       <h2 className="text-center text-2xl md:text-3xl font-semibold mb-8 mt-12">
         Browse <span className="text-red-500">another programs</span> that we

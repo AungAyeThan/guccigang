@@ -201,7 +201,7 @@ const Navbar = () => {
 
             <li>
               <a
-                href="/faqs"
+                href="/faq"
                 className={`${
                   isActive("/faqs") ? "text-red-500" : "text-gray-700"
                 } hover:text-red-500`}

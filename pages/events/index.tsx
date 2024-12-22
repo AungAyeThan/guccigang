@@ -93,7 +93,6 @@ const Events = () => {
             the highlights that shaped the UX landscape. Explore our past events
             recap now.
           </p>
-          <button className="uxmm-btn text-white mt-8">Become a mentor</button>
         </div>
       </div>
 

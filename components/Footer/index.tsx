@@ -33,10 +33,10 @@ const Footer = () => {
             <a href="#" className="hover:text-pink-500">
               Join Us
             </a>
-            <a href="#" className="hover:text-pink-500">
+            <a href="/faq" className="hover:text-pink-500">
               FAQs
             </a>
-            <a href="#" className="hover:text-pink-500">
+            <a href="/blog" className="hover:text-pink-500">
               Blog
             </a>
           </nav>

@@ -3,6 +3,7 @@ import Partners from "@/components/Partners";
 import React from "react";
 enum EImageUri {
   GroupPic = "/images/group-pic.png",
+  Volunteer = "/images/volunteer.png",
   PartnerProgram = "/images/partner-program.png",
   MentorProgram = "/images/mentor-program.png",
   VolunteerProgram = "/images/volunteer-program.png",
@@ -20,53 +21,87 @@ const Volunteer = () => {
         </div>
 
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-bold leading-[54px] text-[40px]">
-          Become a <span className="uxmm-text-color">Volunteer</span>
+        <h1 className="text-3xl md:text-5xl font-bold leading-[54px] text-[40px] font-plusJakarta">
+          <span className="uxmm-text-color">Volunteer</span> Your Passion for UX
         </h1>
 
+        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[85%] lg:left-[72%]  hidden md:block">
+          <img
+            src={EImageUri.DoodleAsset1}
+            alt="DoodleAsset"
+            className="absw-12 h-12 md:h-[50px] lg:h-[50px] xl:h-[60px]"
+          />
+        </div>
+
         {/* Description */}
-        <p className="text-gray-600 text-base md:text-lg leading-[26px leading-relaxed mt-4 max-w-2xl font-poppins">
-          Becoming a mentor with UXMM can provide you with an opportunity to
-          share your expertise and knowledge with others, while also building
-          your professional network and enhancing your leadership skills.
+        <p className="text-customgray text-base text-[16px] text-center font-[400] leading-[26px] leading-relaxed mt-4 max-w-xl font-poppins">
+          Want to contribute to the future of UX design? Join our passionate
+          volunteer community!
+          <br /> Whether you're a seasoned professional or just starting out,
+          join our community and make a difference. Share your knowledge, learn
+          from experts, build your network, and shape the future of UX. No
+          experience needed. Let's work together to create a more user-friendly
+          world.
         </p>
 
         <button className="mt-6 px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:from-pink-600 hover:to-red-600 transition">
-          Become a mentor
+          Become a volunteer
         </button>
+
+        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[345px] min-[320px]:left-[20%]  lg:left-[25%]  hidden md:block">
+          <img
+            src={EImageUri.DoodleAsset2}
+            alt="DoodleAsset"
+            className="w-12 h-12 md:h-[50px] lg:h-[50px] xl:h-[60px]"
+          />
+        </div>
       </div>
 
       <div className="flex px-4 py-12">
         <div className="mx-auto flex max-w-5xl flex-col items-center md:flex-row md:justify-between">
           <div className="flex hidden justify-center md:block md:w-1/2 md:justify-end">
             <img
-              src={EImageUri.GroupPic}
+              src={EImageUri.Volunteer}
               alt="uxmm"
               className="h-auto max-w-full"
             />
           </div>
-          <div className="text-center md:mt-5 md:w-1/2 md:text-left">
+          <div className="md:mt-5 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
               <p className="text-[32px] font-semibold leading-[42px] text-left font-plusJakarta">
                 Benefits of becoming a{" "}
-                <span className="uxmm-text-color">mentor with UXMM</span>
+                <span className="uxmm-text-color">volunteer with UXMM</span>
               </p>
             </div>
             <div className="block flex justify-center md:hidden md:w-1/2 md:justify-end mt-5">
               <img
-                src={EImageUri.GroupPic}
+                src={EImageUri.Volunteer}
                 alt="uxmm"
                 className="h-auto max-w-full"
               />
             </div>
-            <p className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0">
-              As a mentor, you will work with UX enthusiasts who are looking to
-              develop their skills and grow in their careers. You will provide
-              guidance, support, and feedback to help them achieve their goals
-              and advance in their careers. This can be a highly rewarding
-              experience, as you will have the opportunity to share your
-              knowledge and expertise, while also making a positive impact on
-              the UX community.
+            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0 list-disc list-inside">
+              <li>
+                🎓 <b>Professional Growth:</b> Gain valuable skills and
+                insights.
+              </li>
+              <li>
+                ☕ <b>Network & Connect:</b> Build relationships in the UX
+                community.
+              </li>
+              <li>
+                🏆 <b>Boost Your Career/Career Advancement:</b> Get noticed by
+                industry leaders.
+              </li>
+              <li>
+                💞 <b>Effective Impact:</b> Empower Myanmar's UX community with
+                flexible commitment.
+              </li>
+            </ul>
+            <p className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-5">
+              No experience needed and we'll find the perfect role for you.
+              Ready to join? Fill out our short registration form and we'll be
+              in touch!
             </p>
           </div>
         </div>
@@ -90,8 +125,6 @@ const Volunteer = () => {
 
         {/* Right Decorative Dots */}
       </div>
-
-      <Partners />
 
       <h2 className="text-center text-2xl md:text-3xl font-semibold mb-8 mt-[80px]">
         Browse <span className="text-red-500">another programs</span> that we

@@ -78,14 +78,15 @@ const Blogs = () => {
     <>
       <div className="flex items-center justify-center">
         <div className="text-center m-[4rem] w-[600px]">
-          <p className="text-[16px] leading-[26px] font-[400] mb-[15px] font-plusJakarta">
-            <span className="uxmm-text-color">Resources</span> /{" "}
-            <span>blogs</span>
+          <p className="text-[16px] leading-[26px] font-[400] mb-[15px] font-poppins">
+            <span className="text-sideMapGray">Resources</span> /{" "}
+            <span>Blogs</span>
           </p>
+
           <p className="mb-4 text-[40px] leading-[54px] font-[700]">
             Browse our <span className="uxmm-text-color">blog posts</span>
           </p>
-          <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[80%] min-[1024px]:left-[72%] lg:left-[65%]  hidden md:block">
+          <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[80%] min-[1024px]:left-[65%] lg:left-[65%]  hidden md:block">
             <img
               src={EImageUri.DoodleAsset1}
               alt="DoodleAsset"
@@ -97,9 +98,6 @@ const Blogs = () => {
             wealth of informative and thought-provoking blog contents.
             Digestible articles about digital design and technology trend.
           </p>
-          <button className="uxmm-btn text-white mt-[2rem]">
-            Become a mentor
-          </button>
         </div>
       </div>
 

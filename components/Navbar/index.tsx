@@ -16,7 +16,7 @@ const Navbar = () => {
     ["/mentor", "/partner", "/speaker", "/volunteer"].includes(path);
 
   enum EImageUri {
-    UxmmLogo = "/images/uxmm-logo.png",
+    UxmmLogo = "/images/uxmmlogo.png",
   }
 
   // Toggle Functions
@@ -39,7 +39,7 @@ const Navbar = () => {
             <img
               src={EImageUri.UxmmLogo}
               alt="uxmm"
-              className="h-auto max-w-full"
+              className="h-[50px] max-w-full"
             />
           </a>
           {/* Mobile menu button */}
@@ -156,64 +156,25 @@ const Navbar = () => {
               )}
             </li>
 
-            {/* Resources Menu Item with Click Dropdown */}
-            <li className="relative">
-              <button
-                onClick={toggleResourcesDropdown}
-                className="text-gray-700 hover:text-red-500 flex items-center focus:outline-none"
+            <li>
+              <a
+                href="/events"
+                className={`${
+                  isActive("/events") ? "text-red-500" : "text-gray-700"
+                } hover:text-red-500`}
               >
                 Events
-                <svg
-                  className="ml-1 w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-              {isResourcesOpen && (
-                <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg py-2 z-10">
-                  <a
-                    href="/blog"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                  >
-                    Blog
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                  >
-                    Guides
-                  </a>
-                  <a
-                    href="/events"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                  >
-                    Events
-                  </a>
-                </div>
-              )}
+              </a>
             </li>
 
             <li>
-              <a
-                href="/faq"
-                className={`${
-                  isActive("/faqs") ? "text-red-500" : "text-gray-700"
-                } hover:text-red-500`}
-              >
-                FAQs
-              </a>
+              <a href="mailto:info@uxmm.org">Join Us</a>
             </li>
 
             {/* Contact Us Button for Mobile */}
             <li className="md:hidden">
               <a
-                href="#"
+                href="mailto:info@uxmm.org"
                 className="block text-center bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold py-2 px-6 rounded-full mt-4"
               >
                 Contact Us
@@ -225,7 +186,7 @@ const Navbar = () => {
         {/* Contact Button Desktop - Hidden on Mobile */}
         <div className="mt-4 md:mt-0 md:ml-8 hidden md:inline-block">
           <a
-            href="#"
+            href="mailto:info@uxmm.org"
             className="inline-block bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold py-2 px-6 rounded-full"
           >
             Contact Us

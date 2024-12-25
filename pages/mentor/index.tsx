@@ -175,7 +175,7 @@ const MentorSection = () => {
             </div>
             <a
               href="mailto:info@uxmm.org"
-              className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-[400px] hover:bg-pink-500 hover:text-white transition"
+              className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
             >
               Become a partner
             </a>
@@ -205,7 +205,7 @@ const MentorSection = () => {
             </div>
             <a
               href="mailto:info@uxmm.org"
-              className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-[400px] hover:bg-pink-500 hover:text-white transition"
+              className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
             >
               Become a speaker
             </a>
@@ -229,7 +229,7 @@ const MentorSection = () => {
               </div>
               <a
                 href="mailto:info@uxmm.org"
-                className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-[400px] hover:bg-pink-500 hover:text-white transition"
+                className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
               >
                 Become a speaker
               </a>
@@ -264,15 +264,14 @@ const MentorSection = () => {
                 Volunteer Program
               </h2>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
-                Becoming a partner with UXMM can provide you with an opportunity
-                to connect with a community of UX professionals and enthusiasts,
-                as well as promote your brand or product to a highly engaged
-                audience.
+                Becoming a volunteer with UXMM can provide you with an
+                opportunity to contribute to the development of the UX community
+                and gain valuable experience in event planning and management.
               </p>
             </div>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSc0sm1rEZOzyG__uQYZ7gBKlECL3a3dx82GdG7_jzomuRhSvg/viewform"
-              className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-[400px] hover:bg-pink-500 hover:text-white transition"
+              className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
             >
               Become a volunteer
             </a>

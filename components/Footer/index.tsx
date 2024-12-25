@@ -6,8 +6,7 @@ enum EImageUri {
   ApplePodcast = "/images/applepodcasts.png",
   SpotifyIcon = "/images/spotify.png",
   GooglePodcastIcon = "/images/googlepodcasts.png",
-  Overcast = "/images/overcast.png",
-  RSS = "/images/rss.png",
+  YtMusic = "/images/yt.png",
 }
 
 const Footer = () => {
@@ -27,16 +26,16 @@ const Footer = () => {
             <a href="/events" className="hover:text-pink-500">
               Events
             </a>
-            <a href="#" className="hover:text-pink-500">
+            <a href="mailto:info@uxmm.org" className="hover:text-pink-500">
               Support Us
             </a>
-            <a href="#" className="hover:text-pink-500">
+            <a href="mailto:info@uxmm.org" className="hover:text-pink-500">
               Join Us
             </a>
             <a href="/faq" className="hover:text-pink-500">
               FAQs
             </a>
-            <a href="/blog" className="hover:text-pink-500">
+            <a href="https://medium.com/uxmm" className="hover:text-pink-500">
               Blog
             </a>
           </nav>
@@ -84,38 +83,24 @@ const Footer = () => {
         <div className="md:mt-[50px]">
           <h3 className="text-gray-800 font-medium mb-4">Podcast</h3>
           <div className="flex flex-wrap gap-4">
-            <a href="https://podcasts.apple.com/my/podcast/uxmm/id1523879034">
+            <a href="https://podcasts.apple.com/my/podcast/uxmm/id1523879034" target="_blank">
               <img
                 src={EImageUri.ApplePodcast}
                 alt="Apple Podcast"
                 className="w-6 h-6 hover:opacity-80"
               />
             </a>
-            <a href="https://open.spotify.com/show/07LdwCcIgw4h550axPQrLp?si=0cc3486ab65a44d1">
+            <a href="https://open.spotify.com/show/07LdwCcIgw4h550axPQrLp?si=0cc3486ab65a44d1" target="_blank">
               <img
                 src={EImageUri.SpotifyIcon}
                 alt="Spotify"
                 className="w-6 h-6 hover:opacity-80"
               />
             </a>
-            <a href="#">
+            <a href="https://music.youtube.com/channel/UClLaxKGmw5yR1w8aBtCNV_w" target="_blank">
               <img
-                src={EImageUri.GooglePodcastIcon}
-                alt="Google Podcast"
-                className="w-6 h-6 hover:opacity-80"
-              />
-            </a>
-            <a href="#">
-              <img
-                src={EImageUri.Overcast}
-                alt="Overcast"
-                className="w-6 h-6 hover:opacity-80"
-              />
-            </a>
-            <a href="#">
-              <img
-                src={EImageUri.RSS}
-                alt="RSS"
+                src={EImageUri.YtMusic}
+                alt="youtube music"
                 className="w-6 h-6 hover:opacity-80"
               />
             </a>

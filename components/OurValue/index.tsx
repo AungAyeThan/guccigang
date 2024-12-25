@@ -1,6 +1,10 @@
 enum EImageUri {
+  CommunityFocus = "/images/communityfocused.png",
   Collaboration = "/images/collaboration.png",
   Empowerment = "/images/empowerment.png",
+  Innovation = "/images/innovation.png",
+  SustainabilityFocused = "/images/sustainabilityfocused.png",
+  Impactful = "/images/impactful.png",
   Transparency = "/images/transparency.png",
   Diversity = "/images/diversity.png",
   WavyBackground = "/images/wavy-background.png",
@@ -33,22 +37,39 @@ const OurValue = () => {
 
         {/* Values Grid */}
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:max-w-4xl">
-          {/* Transparency */}
+          {/* CommunityFocus */}
           <div className="text-center">
             <div className="flex justify-center mb-4">
               <img
-                src={EImageUri.Transparency}
-                alt="Transparency Icon"
+                src={EImageUri.CommunityFocus}
+                alt="CommunityFocus Icon"
                 className="w-16 h-16"
               />
             </div>
             <h3 className="text-lg font-bold font-plusJakarta mb-5">
-              Transparency
+              Community Focus
             </h3>
             <p className="text-center text-[14px] font-[400] leading-[22px] font-poppins text-customgray">
-              Team transparency at UXMM involves clear communication, shared
-              decision-making, accountability, and fosters trust and a shared
-              sense of ownership, helping us achieve our goals.
+              We prioritize serving the community, building a strong, supportive
+              and contributing to the development of Myanmar.
+            </p>
+          </div>
+
+          {/* Empowerment */}
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src={EImageUri.Empowerment}
+                alt="Empowerment Icon"
+                className="w-16 h-16"
+              />
+            </div>
+            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+              Empowerment
+            </h3>
+            <p className="text-center text-[14px] font-[400] leading-[22px] font-poppins text-customgray">
+              We are committed to providing accessible and quality education to
+              empower individuals and communities through design.
             </p>
           </div>
 
@@ -65,48 +86,60 @@ const OurValue = () => {
               Collaboration
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
-              Team collaboration at UXMM involves working efficiently towards
-              shared goals, leveraging strengths, promoting inclusivity and
-              support, leading to better outcomes and a stronger community.
+              We believe in the power of teamwork and partnerships to achieve
+              great results.
             </p>
           </div>
 
-          {/* Empowerment */}
+          {/* Innovation */}
           <div className="text-center">
             <div className="flex justify-center mb-4">
               <img
-                src={EImageUri.Empowerment}
-                alt="Empowerment Icon"
+                src={EImageUri.Innovation}
+                alt="Innovative Icon"
                 className="w-16 h-16"
               />
             </div>
             <h3 className="text-lg font-bold font-plusJakarta mb-5">
-              Empowerment
+              Innovation
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
-              Team empowerment at UXMM involves providing growth opportunities,
-              fostering autonomy, innovation, and experimentation, enabling
-              individuals to reach their full potential and contribute to the
-              community's success.
+              We encourage creativity and continuous learning.
             </p>
           </div>
 
-          {/* Diversity */}
+          {/* SustainabilityFocused */}
           <div className="text-center">
             <div className="flex justify-center mb-4">
               <img
-                src={EImageUri.Diversity}
-                alt="Diversity Icon"
+                src={EImageUri.SustainabilityFocused}
+                alt="SustainabilityFocused Icon"
                 className="w-16 h-16"
               />
             </div>
             <h3 className="text-lg font-bold font-plusJakarta mb-5">
-              Diversity
+              Sustainability Focused
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
-              Team diversity at UXMM involves embracing differences, creating a
-              diverse and inclusive environment that reflects our users, leading
-              to better design solutions and a more representative community.
+              We strive to create sustainable and long-lasting solutions.
+            </p>
+          </div>
+
+          {/* Impactful */}
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src={EImageUri.Impactful}
+                alt="Impactful Icon"
+                className="w-16 h-16"
+              />
+            </div>
+            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+              Impactful
+            </h3>
+            <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
+              We aim to make a positive and lasting impact on society through
+              our work.
             </p>
           </div>
         </div>

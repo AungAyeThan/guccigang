@@ -40,9 +40,12 @@ const Speaker = () => {
           educate others while making a positive impact on the future of design.
         </p>
 
-        <button className="mt-6 px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:from-pink-600 hover:to-red-600 transition">
+        <a
+          href="mailto:info@uxmm.org"
+          className="mt-6 px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white font-[500] text-[16px] leading-[26px] font-poppins rounded-full shadow-md hover:shadow-lg hover:from-pink-600 hover:to-red-600 transition"
+        >
           Become a speaker
-        </button>
+        </a>
         <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[345px] min-[320px]:left-[20%]  lg:left-[25%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset2}
@@ -111,9 +114,12 @@ const Speaker = () => {
           </h2>
 
           <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
-            <button className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg">
+            <a
+              href="mailto:info@uxmm.org"
+              className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-[500] text-[16px] leading-[26px] font-poppins text-white shadow-lg"
+            >
               Become a speaker
-            </button>
+            </a>
           </div>
         </div>
 
@@ -149,9 +155,12 @@ const Speaker = () => {
                 audience.
               </p>
             </div>
-            <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">
+            <a
+              href="mailto:info@uxmm.org"
+              className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
+            >
               Become a partner
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -177,9 +186,12 @@ const Speaker = () => {
                 skills.
               </p>
             </div>
-            <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">
+            <a
+              href="mailto:info@uxmm.org"
+              className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
+            >
               Become a mentor
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -199,9 +211,12 @@ const Speaker = () => {
                   your leadership skills.
                 </p>
               </div>
-              <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">
+              <a
+                href="mailto:info@uxmm.org"
+                className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
+              >
                 Become a mentor
-              </button>
+              </a>
             </div>
 
             <div className="flex-shrink-0 lg:w-1/2">
@@ -233,15 +248,17 @@ const Speaker = () => {
                 Volunteer Program
               </h2>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
-                Becoming a mentor with UXMM can provide you with an opportunity
-                to share your expertise and knowledge with others, while also
-                building your professional network and enhancing your leadership
-                skills.
+                Becoming a volunteer with UXMM can provide you with an
+                opportunity to contribute to the development of the UX community
+                and gain valuable experience in event planning and management.
               </p>
             </div>
-            <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc0sm1rEZOzyG__uQYZ7gBKlECL3a3dx82GdG7_jzomuRhSvg/viewform"
+              className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
+            >
               Become a Volunteer
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -30,12 +30,11 @@ const ImageCarousel = () => {
   }
   return (
     <>
-      <header className="py-10 bg-white">
-        <h1 className="font-[700] text-[40px] leading-[54px] text-left font-plusJakarta lg:ml-[250px] max-w-[700px]">
-          <span className="uxmm-text-color">UXMM</span> : Empowering Myanmar's
-          Design Community
-        </h1>
-      </header>
+      <div className="font-[700] text-[40px] leading-[54px] text-left font-plusJakarta lg:ml-[250px] max-w-[700px]">
+        <span className="uxmm-text-color">UXMM</span>{" "}
+        <span>: Empowering Myanmar's Design Community</span>
+      </div>
+
       {isClient && !isMobile && (
         <div className="w-full max-w-5xl mx-auto py-8 div1">
           <DesktopSlider />

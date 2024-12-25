@@ -53,9 +53,12 @@ export default function Home() {
 
             {/* Buttons */}
             <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
-              <button className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg border-2">
+              <a
+                href="mailto:info@uxmm.org"
+                className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg border-2"
+              >
                 Join With Us →
-              </button>
+              </a>
               <button className="rounded-full border border-pink-500 bg-white px-6 py-3 font-semibold text-pink-500 shadow-lg hover:bg-pink-200 border-2">
                 Upcoming Events
               </button>

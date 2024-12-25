@@ -54,8 +54,11 @@ const memberConfig = {
     title: "Lynn Myat Bhone Htut",
     subtitle: "Content & Visual Specialist",
     image: EImageUri.LynnMyat,
-    about: "<p>xx</p>",
-    link: {},
+    about:
+      "<p>Lynn, the youngest member of the UXMM, began his UX career when he was only 15 years old. In addition, he started working in the design industry as a freelancer .  As a result of his own studies in user interface and experience design, he is now working in the field. He got a job in S2T Corporation at Singapore when he was just 17 years old. He also has an interest in programming and game design. When he has spare time, his favorite things to do are do work on Visual Design and write articles about UX.</p>",
+    link: {
+      linkedin: "https://www.linkedin.com/in/lynn-myat-bhone-htut-388103204/",
+    },
   },
   thondary: {
     title: "Thon Dary Lwin",
@@ -64,13 +67,17 @@ const memberConfig = {
     about:
       "<p>Thon is an independent T-shaped product enthusiast with experience in launching digital products in fintech, e-commerce, and education. Her main focus is on strategic planning for growth products in startup industries by aligning with business goals and design decisions </p>" +
       "<br/><p>Thon is currently working at BlokID, analytic product company from Bangkok as UI/UX Designer and she also has held roles such as Senior UI/UX Designer at Dinger, where she optimized fintech products, and Lead UI Designer at Thate Pan Hub, where she created engaging, accessible designs for STEM education platforms. Thon is also an experienced mentor at MMPROJECT, having taught UI/UX concepts to diverse audiences, from young learners to professionals.</p>",
-    link: {},
+    link: {
+      linkedin: "https://www.linkedin.com/in/thondarylwin/",
+    },
   },
   htoo: {
     title: "Htoo Aung Shine",
     subtitle: "Volunteer Member",
     image: EImageUri.HtooAungShine,
-    link: {},
+    link: {
+      linkedin: "https://www.linkedin.com/in/htoo-aung-shine/",
+    },
     about:
       "<p> Htoo Aung Shine is a UI/UX Designer who wants to create impactful design solutions for both businesses and users. With a solid background in graphic design, he has developed expertise in visual design, branding strategy, user interface, and user experience design. He is also focused on branding for sustainable businesses and continues to expand his knowledge in branding strategy and business management as part of his lifelong learning journey.</p>",
   },
@@ -79,20 +86,26 @@ const memberConfig = {
     subtitle: "Program & Coordination Specialist",
     image: EImageUri.ShuMawaSoe,
     about: "",
-    link: {},
+    link: {
+      linkedin: "https://www.linkedin.com/in/shumawasoe/",
+    },
   },
   shun: {
     title: "Shun Pyae Pyae Aung",
     subtitle: "Visual Specialist",
     image: EImageUri.ShunPyaePyaeAung,
     about: "",
-    link: {},
+    link: {
+      linkedin: "https://www.linkedin.com/in/shunnpyaepyaeaung-ux/",
+    },
   },
   ayechan: {
     title: "Aye Chan Pyae",
     subtitle: "Volunteer Member",
     image: EImageUri.AyeChanPyae,
-    link: {},
+    link: {
+      linkedin: "https://www.linkedin.com/in/amberpyae/",
+    },
     about:
       "<p> Pyae has a strong foundation in MVP design with a focus on usability and extensive experience in the startup landscape. Currently leading the research program at UXMM, Pyae is dedicated to using research as a cornerstone for knowledge creation and driving innovation. <br/> <br/> A data-driven decision-maker, Pyae utilizes analytics to craft design strategies and manage products, effectively balancing business objectives with user needs. With experience collaborating with multicultural teams across various countries, Pyae brings a results-driven and collaborative approach to delivering impactful solutions. </p>",
   },

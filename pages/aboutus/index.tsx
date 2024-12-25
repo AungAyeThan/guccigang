@@ -30,6 +30,12 @@ const ImageCarousel = () => {
   }
   return (
     <>
+      <header className="py-10 bg-white">
+        <h1 className="font-[700] text-[40px] leading-[54px] text-left font-plusJakarta lg:ml-[250px] max-w-[700px]">
+          <span className="uxmm-text-color">UXMM</span> : Empowering Myanmar's
+          Design Community
+        </h1>
+      </header>
       {isClient && !isMobile && (
         <div className="w-full max-w-5xl mx-auto py-8 div1">
           <DesktopSlider />
@@ -54,7 +60,9 @@ const ImageCarousel = () => {
           <div className="text-center md:mt-5 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
               <p className="mb-1 sm:mb-1 text-2xl sm:text-3xl leading-[42px] font-[600] font-plusJakarta">
-                Behind <span className="uxmm-text-color">UXMM</span>
+                <span>Transforming the Myanmar design landscape one</span>{" "}
+                <span className="uxmm-text-color">amazing experience</span>{" "}
+                <span> at a time.</span>
               </p>
             </div>
             <div className="block flex justify-center md:hidden md:w-1/2 md:justify-end">
@@ -64,7 +72,7 @@ const ImageCarousel = () => {
                 className="h-auto max-w-full"
               />
             </div>
-            <p className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0">
+            <p className="max-w-xl font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0">
               UXMM is a pioneering non-profit organization established in 2020
               by a passionate group of UX practitioners in Myanmar, UXMM has
               grown into Myanmar's largest non-profit design organization. We
@@ -101,12 +109,11 @@ const ImageCarousel = () => {
                 Empowering Exceptional User Experiences
               </h4>
               <p className="text-base leading-[26px] text-left font-poppins">
-                At UXMM, our mission is to empower exceptional user experiences.
-                We are dedicated to providing the tools, knowledge, and
-                resources needed to create impactful, user-centric designs.
-                Through our commitment to excellence, we strive to elevate the
-                standard of UX design and enhance the digital landscape for all
-                users.
+                To collaborate with individuals, communities, organizations, and
+                educational institutions both locally and internationally to
+                adopt and promote international standard design practices. This
+                will enable Myanmar's design professionals to compete globally
+                and secure job opportunities.
               </p>
             </div>
           </div>
@@ -121,12 +128,9 @@ const ImageCarousel = () => {
                 Envisioning a Seamless Digital Future
               </h4>
               <p className="text-base leading-[26px] text-left font-poppins">
-                At UXMM, our vision is to envision and create a seamless digital
-                future where user experiences are intuitive, immersive, and
-                transformative. We strive to be at the forefront of
-                technological advancements and design innovation, continuously
-                pushing the boundaries of UX to deliver exceptional
-                interactions.
+                To create a design society that prioritizes human-centered,
+                sustainable, and impactful products and services across all
+                levels and sectors related to UX design in Myanmar.
               </p>
             </div>
           </div>

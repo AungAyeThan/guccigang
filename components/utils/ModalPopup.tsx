@@ -7,6 +7,7 @@ interface ModalProps {
   subtitle: string;
   image: string;
   about: string;
+  link: Record<string, string>;
 }
 
 const ModalComponent: React.FC<ModalProps> = ({
@@ -16,6 +17,7 @@ const ModalComponent: React.FC<ModalProps> = ({
   subtitle,
   image,
   about,
+  link,
 }) => {
   // Prevent scrolling when the modal is open
   useEffect(() => {
@@ -79,13 +81,28 @@ const ModalComponent: React.FC<ModalProps> = ({
         </p>
 
         {/* Modal buttons */}
+
         <div className="flex space-x-4 items-center justify-center mb-4">
-          <button className="text-black border-[1px] border-black px-3 py-1 rounded-lg">
-            LinkedIn
-          </button>
-          <button className="text-black border-[1px] border-black px-3 py-1 rounded-lg">
-            Behance
-          </button>
+          {link.linkedin && (
+            <a
+              href={link.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black border-[1px] border-black px-3 py-1 rounded-lg"
+            >
+              LinkedIn
+            </a>
+          )}
+          {link.behance && (
+            <a
+              href={link.behance}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black border-[1px] border-black px-3 py-1 rounded-lg"
+            >
+              Behance
+            </a>
+          )}
         </div>
 
         {/* Modal scrollable content */}

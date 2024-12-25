@@ -22,7 +22,7 @@ const OurValue = () => {
       <div className="relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold font-plusJakarta text-customgray">
-            Our <span className="text-red-500">Values</span>
+            Our <span className="uxmm-text-color">Values</span>
             <img
               src={EImageUri.Line}
               alt="wavy line"

@@ -93,7 +93,7 @@ const ModalComponent: React.FC<ModalProps> = ({
               href={link.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-customgray border-[0.5px] border-black px-3 py-1 rounded-lg font-poppins text-[16px] leading-[26px] font-[400]"
+              className="text-customgray border-[1px] border-black px-3 py-1 rounded-lg font-poppins text-[16px] leading-[26px] font-[400]"
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
@@ -108,7 +108,7 @@ const ModalComponent: React.FC<ModalProps> = ({
               href={link.behance}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black border-[0.5px] border-black px-3 py-1 rounded-lg font-poppins text-[16px] leading-[26px] font-[400]"
+              className="text-customgray border-[1px] border-black px-3 py-1 rounded-lg font-poppins text-[16px] leading-[26px] font-[400]"
             >
               <FontAwesomeIcon
                 icon={faSquareBehance}

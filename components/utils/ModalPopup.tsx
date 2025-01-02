@@ -1,4 +1,9 @@
 import React, { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faSquareBehance,
+} from "@fortawesome/free-brands-svg-icons";
 
 interface ModalProps {
   isOpen: boolean;
@@ -88,8 +93,13 @@ const ModalComponent: React.FC<ModalProps> = ({
               href={link.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black border-[1px] border-black px-3 py-1 rounded-lg"
+              className="text-customgray border-[0.5px] border-black px-3 py-1 rounded-lg font-poppins text-[16px] leading-[26px] font-[400]"
             >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="lg"
+                style={{ color: "#095b9a", marginRight: "5px" }}
+              />
               LinkedIn
             </a>
           )}
@@ -98,8 +108,13 @@ const ModalComponent: React.FC<ModalProps> = ({
               href={link.behance}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black border-[1px] border-black px-3 py-1 rounded-lg"
+              className="text-black border-[0.5px] border-black px-3 py-1 rounded-lg font-poppins text-[16px] leading-[26px] font-[400]"
             >
+              <FontAwesomeIcon
+                icon={faSquareBehance}
+                size="lg"
+                style={{ marginRight: "5px" }}
+              />
               Behance
             </a>
           )}

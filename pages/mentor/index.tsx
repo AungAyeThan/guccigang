@@ -134,7 +134,7 @@ const MentorSection = () => {
       </div>
 
       <div className="bg-gray-100 p-5">
-        <p className="text-center text-[24px] font-[700] leading-[38px] mb-[15px] font-plusJakarta">
+        <p className="text-center sm:text-center lg:text-left md:ml-0 lg:ml-[18%] text-[24px] font-[700] leading-[38px] mb-[15px] font-plusJakarta">
           The Heart of UXMM:{" "}
           <span className="uxmm-text-color block sm:inline">Our Core Team</span>
         </p>

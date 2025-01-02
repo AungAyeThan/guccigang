@@ -83,21 +83,30 @@ const Footer = () => {
         <div className="md:mt-[50px]">
           <h3 className="text-gray-800 font-medium mb-4">Podcast</h3>
           <div className="flex flex-wrap gap-4">
-            <a href="https://podcasts.apple.com/my/podcast/uxmm/id1523879034" target="_blank">
+            <a
+              href="https://podcasts.apple.com/my/podcast/uxmm/id1523879034"
+              target="_blank"
+            >
               <img
                 src={EImageUri.ApplePodcast}
                 alt="Apple Podcast"
                 className="w-6 h-6 hover:opacity-80"
               />
             </a>
-            <a href="https://open.spotify.com/show/07LdwCcIgw4h550axPQrLp?si=0cc3486ab65a44d1" target="_blank">
+            <a
+              href="https://open.spotify.com/show/07LdwCcIgw4h550axPQrLp?si=0cc3486ab65a44d1"
+              target="_blank"
+            >
               <img
                 src={EImageUri.SpotifyIcon}
                 alt="Spotify"
                 className="w-6 h-6 hover:opacity-80"
               />
             </a>
-            <a href="https://music.youtube.com/channel/UClLaxKGmw5yR1w8aBtCNV_w" target="_blank">
+            <a
+              href="https://music.youtube.com/channel/UClLaxKGmw5yR1w8aBtCNV_w"
+              target="_blank"
+            >
               <img
                 src={EImageUri.YtMusic}
                 alt="youtube music"

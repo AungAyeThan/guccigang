@@ -30,7 +30,7 @@ const ImageCarousel = () => {
   }
   return (
     <>
-      <div className="font-[700] text-[40px] leading-[54px] text-left font-plusJakarta lg:ml-[250px] max-w-[700px]">
+      <div className="font-[700] text-[40px] leading-[54px] text-left font-plusJakarta lg:ml-[250px] max-w-[700px] mt-[30px] mb-[30px]">
         <span className="uxmm-text-color">UXMM</span>{" "}
         <span>: Empowering Myanmar's Design Community</span>
       </div>
@@ -141,7 +141,7 @@ const ImageCarousel = () => {
       <WhatWeDo />
 
       <div className="bg-gray-100 p-5">
-        <p className="text-center text-[24px] font-[700] leading-[38px] mb-[15px] font-plusJakarta">
+        <p className="text-center text-[24px] font-[700] leading-[38px] mb-[15px] font-plusJakarta pt-[50px]">
           The Heart of UXMM:{" "}
           <span className="uxmm-text-color">Our Core Team</span>
         </p>

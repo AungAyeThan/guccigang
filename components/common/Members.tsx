@@ -85,7 +85,8 @@ const memberConfig = {
     title: "Shu Mawa Soe",
     subtitle: "Program & Coordination Specialist",
     image: EImageUri.ShuMawaSoe,
-    about: "",
+    about:
+      "<p> Hello! I’m Shu Mawa. I’m a UX Designer currently in the fintech space. For the past 4 years, I’ve helped a range of clients, from established organizations to early startups, drive their missions through better, more inclusive user experiences. Over the years, I've used Design Thinking and UX methodologies to provide solutions that empower overlooked communities and bring to life the product vision.</p>",
     link: {
       linkedin: "https://www.linkedin.com/in/shumawasoe/",
     },
@@ -120,7 +121,11 @@ const memberConfig = {
     title: "Thiri Phyo Naing",
     subtitle: "Volunteer Member",
     image: EImageUri.Thiri,
-    about: "",
+    about:
+      "<p> Thiri Phyo Naing is a passionate UX/UI designer with a talent for creating simple, user-friendly digital product experiences. With experience in agency and job platform design, she blends creativity, problem-solving, and empathy to craft impactful designs. <br/>" +
+      "<br/> Her journey began at Startup Weekend Yangon 2022, where she showcased her skills and built valuable connections, leading to her first role as a UX/UI designer at Logy, a design agency startup. In December 2023, she returned to Startup Weekend Yangon as a finalist, impressing with her creative thinking and presentation skills. Thiri’s dedication to innovation was further recognized when she won first prize in the Youth Innovation Challenge, where her team excelled in problem-solving and creative ideas. <br/>" +
+      "<br/> Now, Thiri is a Volunteering and Coordination Specialist at UX Myanmar (UXMM), she dreams of making UX/UI design a strong and recognized field in Myanmar and inspiring the next generation of designers. With her passion for design and commitment to community, Thiri Phyo Naing is making a positive impact on Myanmar’s UI/UX design industry.",
+
     link: {
       linkedin: "https://www.linkedin.com/in/thiri-phyo-naing-naing-7b478b274/",
       behance: "https://www.behance.net/thiriphyonaing",

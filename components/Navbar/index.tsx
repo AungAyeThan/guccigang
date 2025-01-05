@@ -66,7 +66,7 @@ const Navbar = () => {
         <div
           className={`flex-1 md:flex md:items-center md:justify-center ${isOpen ? "block" : "hidden"}`}
         >
-          <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 font-poppins text-base font-normal leading-6 text-left">
+          <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 font-poppins sm:text-[15px] lg:text-[16px] leading-6 text-left">
             <li>
               <a
                 href="/"

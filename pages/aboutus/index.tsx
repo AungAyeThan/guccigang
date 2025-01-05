@@ -49,7 +49,7 @@ const ImageCarousel = () => {
 
       <div className="flex bg-white px-4 py-12">
         <div className="mx-auto flex max-w-5xl flex-col items-center md:flex-row md:justify-between">
-          <div className="flex hidden justify-center md:block md:w-1/2 md:justify-end">
+          <div className="flex hidden justify-center md:block md:w-1/2 md:justify-end mr-5">
             <img
               src={EImageUri.GroupPic}
               alt="uxmm"

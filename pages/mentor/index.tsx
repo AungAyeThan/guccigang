@@ -61,7 +61,7 @@ const MentorSection = () => {
 
       <div className="flex px-4 py-12">
         <div className="mx-auto flex max-w-5xl flex-col items-center md:flex-row md:justify-between">
-          <div className="flex hidden justify-center md:block md:w-1/2 md:justify-end">
+          <div className="flex hidden justify-center md:block md:w-1/2 md:justify-end mr-5">
             <img
               src={EImageUri.Mentorship}
               alt="uxmm"
@@ -70,7 +70,7 @@ const MentorSection = () => {
           </div>
           <div className="md:mt-5 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
-              <p className="text-center text-[32px] font-semibold leading-[42px] text-left font-plusJakarta">
+              <p className="text-center sm:text-center lg:text-left text-[32px] font-semibold leading-[42px] text-left font-plusJakarta">
                 Benefits of becoming a{" "}
                 <span className="uxmm-text-color">mentor with UXMM</span>
               </p>
@@ -82,7 +82,7 @@ const MentorSection = () => {
                 className="h-auto max-w-full"
               />
             </div>
-            <ul className="max-w-md font-poppins text-[16px]  leading-[26px] text-customgray mt-7 md:py-0 list-disc list-inside">
+            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0 list-disc list-inside">
               <li>
                 <b>Inspire the next generation:</b> Make a positive impact on
                 the careers of young designers.

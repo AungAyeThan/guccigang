@@ -7,7 +7,7 @@ enum EImageUri {
   Slider2 = "/images/slider2.png",
   Slider3 = "/images/slider3.png",
   Slider4 = "/images/slider4.png",
-  Slider5 = "/images/slider5.png",
+  Slider5 = "/images/sliders5.png",
   Slider6 = "/images/slider6.jpg",
   GroupPic = "/images/group-pic.png",
 }

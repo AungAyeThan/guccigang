@@ -199,15 +199,15 @@ const Members: React.FC = () => {
       about: memberConfig.shumawa.about,
       link: memberConfig.shumawa.link,
     },
-    {
-      key: "shun",
-      title: memberConfig.shun.title,
-      subtitle: memberConfig.shun.subtitle,
-      image: memberConfig.shun.image,
-      modalImage: EImageUri.ShunPyaePyaeAung,
-      about: memberConfig.shun.about,
-      link: memberConfig.shun.link,
-    },
+    // {
+    //   key: "shun",
+    //   title: memberConfig.shun.title,
+    //   subtitle: memberConfig.shun.subtitle,
+    //   image: memberConfig.shun.image,
+    //   modalImage: EImageUri.ShunPyaePyaeAung,
+    //   about: memberConfig.shun.about,
+    //   link: memberConfig.shun.link,
+    // },
     {
       key: "ayechan",
       title: memberConfig.ayechan.title,
@@ -261,7 +261,7 @@ const Members: React.FC = () => {
             />
           </div>
           <ModalComponent
-            isOpen={openModal === member.key}
+            isOpen={openModal === member.key && member.key !== "thane"}
             onClose={closeModalHandler}
             title={member.title}
             subtitle={member.subtitle}

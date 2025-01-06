@@ -8,6 +8,7 @@ enum EImageUri {
   Slider3 = "/images/slider3.png",
   Slider4 = "/images/slider4.png",
   Slider5 = "/images/slider5.png",
+  Slider6 = "/images/slider6.jpg",
   GroupPic = "/images/group-pic.png",
 }
 
@@ -61,7 +62,7 @@ const MobileSlider: React.FC = () => {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src={EImageUri.Slider5}
+          src={EImageUri.Slider6}
           alt="Slide 6"
           className="rounded-lg w-full h-48 object-cover"
         />

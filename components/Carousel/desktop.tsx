@@ -8,6 +8,7 @@ enum EImageUri {
   Slider3 = "/images/slider3.png",
   Slider4 = "/images/slider4.png",
   Slider5 = "/images/slider5.png",
+  Slider6 = "/images/slider6.jpg",
   GroupPic = "/images/group-pic.png",
 }
 
@@ -50,7 +51,7 @@ const DesktopSlider: React.FC = () => {
         <img src={EImageUri.Slider5} alt="Slide 5" className="rounded-lg" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={EImageUri.Slider5} alt="Slide 6" className="rounded-lg" />
+        <img src={EImageUri.Slider6} alt="Slide 6" className="rounded-lg" />
       </SwiperSlide>
     </Swiper>
   );

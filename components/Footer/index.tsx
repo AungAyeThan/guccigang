@@ -119,7 +119,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="mt-8 text-center text-gray-500">
-        © 2020-2024 UXMM, all rights reserved.
+        © 2020-2025 UXMM, all rights reserved.
       </div>
     </footer>
   );

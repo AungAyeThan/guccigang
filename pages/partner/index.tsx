@@ -22,7 +22,7 @@ const Partner = () => {
         </div>
 
         {/* Title */}
-        <h1 className="leading-[54px] text-[40px] font-[700] font-plusJararta md:w-[45%] text-center">
+        <h1 className="leading-[54px] text-[40px] font-[700] font-plusJararta lg:w-[45%] text-center">
           <span className="uxmm-text-color"> Partner with Us </span> to Shape
           Myanmar's Design Community
         </h1>
@@ -35,7 +35,7 @@ const Partner = () => {
         </div>
 
         {/* Description */}
-        <p className="md:text-[16px] leading-[26px] mt-4 font-poppins text-customgray md:w-[43%]">
+        <p className="md:text-[16px] leading-[26px] mt-4 font-poppins text-customgray lg:w-[43%]">
           Become a community partner and help us organize events and initiatives
           that inspire and educate designers across Myanmar. We're looking for
           collaborative partners to share resources, from event spaces to
@@ -55,7 +55,7 @@ const Partner = () => {
           Become a Partner
         </a>
 
-        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[345px] min-[320px]:left-[20%]  lg:left-[25%]  hidden md:block">
+        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] min-[720px]:top-[550px] lg:top-[510px] min-[320px]:left-[20%] min-[760px]:left-[5%] lg:left-[25%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset2}
             alt="DoodleAsset"
@@ -77,19 +77,19 @@ const Partner = () => {
           </div>
           <div className="md:mt-5 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
-              <p className="text-[32px] font-semibold leading-[42px] text-left font-plusJakarta">
+              <p className="text-[32px] font-semibold leading-[42px] text-left md:m-4 font-plusJakarta">
                 Benefits of becoming a{" "}
                 <span className="uxmm-text-color">Partner with UXMM</span>
               </p>
             </div>
-            <div className="block flex justify-center md:hidden md:w-1/2 md:justify-end mt-5">
+            <div className="block flex justify-center md:hidden md:w-1/2  md:justify-end mt-5">
               <img
                 src={EImageUri.PartnerProgram}
                 alt="uxmm"
                 className="h-auto max-w-full"
               />
             </div>
-            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0 list-disc list-inside">
+            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:m-4 md:py-0 list-disc list-inside">
               <li>
                 <b>Increase brand visibility:</b> Reach a wider audience of
                 designers and industry professionals.

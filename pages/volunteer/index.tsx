@@ -15,17 +15,17 @@ const Volunteer = () => {
     <>
       <div className="flex flex-col items-center text-center px-6 py-12 md:px-16">
         <div className="text-gray-500 text-sm mb-4 font-poppins text-base leading-[26px] text-left">
-          <span className="text-gray-500">Programs</span>{" "}
+          <span className="text-sideMapGray">Programs</span>{" "}
           <span className="mx-2">/</span>{" "}
-          <span className="text-black-500">Volunteer</span>
+          <span className="text-black">Volunteer</span>
         </div>
 
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-bold leading-[54px] text-[40px] font-plusJakarta">
+        <h1 className="font-bold leading-[54px] font-plusJakarta text-[40px] sm:text-[35px] md:text-[40px] lg:text-[45px] xl:text-[50px]">
           <span className="uxmm-text-color">Volunteer</span> Your Passion for UX
         </h1>
 
-        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[85%] lg:left-[72%]  hidden md:block">
+        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[87%] lg:left-[85%] xl:left-[75%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset1}
             alt="DoodleAsset"
@@ -48,7 +48,7 @@ const Volunteer = () => {
           Become a volunteer
         </button>
 
-        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[345px] min-[320px]:left-[20%]  lg:left-[25%]  hidden md:block">
+        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[425px] xl:top-[405px] min-[320px]:left-[20%] md:left-[10%] lg:left-[15%] xl:left-[25%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset2}
             alt="DoodleAsset"
@@ -68,7 +68,7 @@ const Volunteer = () => {
           </div>
           <div className="md:mt-5 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
-              <p className="text-[32px] font-semibold leading-[42px] text-left font-plusJakarta">
+              <p className="text-[32px] font-semibold leading-[42px] md:m-5 text-left font-plusJakarta">
                 Benefits of becoming a{" "}
                 <span className="uxmm-text-color">volunteer with UXMM</span>
               </p>
@@ -80,7 +80,7 @@ const Volunteer = () => {
                 className="h-auto max-w-full"
               />
             </div>
-            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0 list-disc list-inside">
+            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:m-5 md:py-0 list-disc list-inside">
               <li>
                 🎓 <b>Professional Growth:</b> Gain valuable skills and
                 insights.
@@ -98,7 +98,7 @@ const Volunteer = () => {
                 flexible commitment.
               </li>
             </ul>
-            <p className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-5">
+            <p className="max-w-md font-poppins text-[16px] leading-[26px] md:m-5 text-customgray mt-5">
               No experience needed and we'll find the perfect role for you.
               Ready to join? Fill out our short registration form and we'll be
               in touch!

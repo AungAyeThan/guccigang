@@ -21,11 +21,11 @@ const Speaker = () => {
         </div>
 
         {/* Title */}
-        <h1 className="font-[700] leading-[54px] text-[40px] md:w-[45%] font-plusJakarta text-center">
+        <h1 className="font-[700] leading-[54px] text-[40px] md:w-[80%] lg:w-[70%] xl:w-[45%] font-plusJakarta text-center">
           Inspire the Next Generation as a{" "}
           <span className="uxmm-text-color">UX Speaker</span>
         </h1>
-        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[85%] lg:left-[72%]  hidden md:block">
+        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[85%] lg:left-[76%] xl:left-[72%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset1}
             alt="DoodleAsset"
@@ -34,7 +34,7 @@ const Speaker = () => {
         </div>
 
         {/* Description */}
-        <p className="md:text-[16px] leading-[26px] mt-4 font-poppins text-customgray md:w-[41%]">
+        <p className="md:text-[16px] leading-[26px] mt-4 font-poppins text-customgray md:w-[80%] lg:w-[67%] xl:w-[41%]">
           Become a speaker at our events and share your knowledge with the UX
           community. By presenting on your area of expertise, you'll inspire and
           educate others while making a positive impact on the future of design.
@@ -46,7 +46,8 @@ const Speaker = () => {
         >
           Become a speaker
         </a>
-        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[345px] min-[320px]:left-[20%]  lg:left-[25%]  hidden md:block">
+
+        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] min-[720px]:top-[450px] lg:top-[400px] lg:top-[40%] xl:top-[50%] min-[320px]:left-[20%] min-[760px]:left-[5%] lg:left-[15%] xl:left-[25%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset2}
             alt="DoodleAsset"
@@ -66,7 +67,7 @@ const Speaker = () => {
           </div>
           <div className="md:mt-5 md:w-1/2 md:text-left">
             <div className="flex items-center justify-between">
-              <p className="text-[32px] font-semibold leading-[42px] text-left font-plusJakarta">
+              <p className="text-[32px] font-semibold leading-[42px] md:m-4 text-left font-plusJakarta">
                 Benefits of becoming a{" "}
                 <span className="uxmm-text-color">Speaker with UXMM</span>
               </p>
@@ -78,7 +79,7 @@ const Speaker = () => {
                 className="h-auto max-w-full"
               />
             </div>
-            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0 list-disc list-inside">
+            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:m-4 md:py-0 list-disc list-inside">
               <li>
                 <b>Increase your visibility:</b> Reach a wider audience of
                 designers and industry professionals.

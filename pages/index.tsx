@@ -59,9 +59,12 @@ export default function Home() {
               >
                 Join With Us →
               </a>
-              <button className="rounded-full border border-pink-500 bg-white px-6 py-3 font-semibold text-pink-500 shadow-lg hover:bg-pink-200 border-2">
-                Upcoming Events
-              </button>
+              <a
+                href="/events"
+                className="rounded-full border border-pink-500 bg-white px-6 py-3 font-semibold text-pink-500 shadow-lg hover:bg-pink-200 border-2"
+              >
+                Browse our Events
+              </a>
             </div>
           </div>
 

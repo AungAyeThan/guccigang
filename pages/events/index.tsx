@@ -77,7 +77,7 @@ const Events = () => {
     <>
       {/* Header Section */}
       <div className="flex items-center justify-center">
-        <div className="text-center m-20 w-[600px]">
+        <div className="text-center m-5 w-[600px]">
           <p className="text-[16px] leading-[26px] font-[400] mb-5">
             <span className="text-neutral-400">Resources</span> /{" "}
             <span>Events</span>

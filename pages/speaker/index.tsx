@@ -21,7 +21,7 @@ const Speaker = () => {
         </div>
 
         {/* Title */}
-        <h1 className="font-[700] leading-[54px] text-[40px] w-[45%] font-plusJakarta text-center">
+        <h1 className="font-[700] leading-[54px] text-[40px] md:w-[45%] font-plusJakarta text-center">
           Inspire the Next Generation as a{" "}
           <span className="uxmm-text-color">UX Speaker</span>
         </h1>

@@ -11,6 +11,7 @@ enum EImageUri {
   productbase = "/images/productbaze.png",
   waimyanmar = "/images/WAImyanmar.png",
   savvysummit = "/images/savvyuxsummit.png",
+  xers = "/images/xers.png",
 }
 
 const Partners = () => {
@@ -51,7 +52,7 @@ const Partners = () => {
           />
           <img
             src={EImageUri.savvysummit}
-            alt="UX MY"
+            alt="savvy summit"
             className="w-16 h-auto mx-auto"
           />
         </div>
@@ -62,7 +63,7 @@ const Partners = () => {
           <span className="uxmm-text-color">Local Partners</span>
         </h2>
 
-        <div className="grid grid-cols-2 mt-8 md:grid-cols-5 justify-center mx-auto lg:mx-[150px]">
+        <div className="grid grid-cols-2 mt-8 md:grid-cols-6 justify-center mx-auto lg:mx-[150px]">
           <img
             src={EImageUri.DesignMatter}
             alt="Design Matters"
@@ -86,6 +87,11 @@ const Partners = () => {
           <img
             src={EImageUri.waimyanmar}
             alt="waimyanmar"
+            className="w-16 h-auto mx-auto"
+          />
+          <img
+            src={EImageUri.xers}
+            alt="xers"
             className="w-16 h-auto mx-auto"
           />
         </div>

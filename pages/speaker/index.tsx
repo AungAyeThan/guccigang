@@ -21,11 +21,11 @@ const Speaker = () => {
         </div>
 
         {/* Title */}
-        <h1 className="font-[700] leading-[54px] text-[40px] md:w-[80%] lg:w-[70%] xl:w-[45%] font-plusJakarta text-center">
+        <h1 className="font-[700] leading-[54px] text-[40px] md:w-[89%] lg:w-[70%] xl:w-[45%] font-plusJakarta text-center">
           Inspire the Next Generation as a{" "}
           <span className="uxmm-text-color">UX Speaker</span>
         </h1>
-        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[85%] lg:left-[76%] xl:left-[72%]  hidden md:block">
+        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[85%] lg:left-[79%] xl:left-[72%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset1}
             alt="DoodleAsset"
@@ -127,7 +127,7 @@ const Speaker = () => {
         {/* Right Decorative Dots */}
       </div>
 
-      <h2 className="text-center text-2xl md:text-3xl font-semibold mb-8 mt-[80px]">
+      <h2 className="text-center font-plusJakarta font-[700] text-[24px] leading-[38px] mb-8 mt-12">
         Browse <span className="text-red-500">another programs</span> that we
         offer
       </h2>
@@ -146,9 +146,9 @@ const Speaker = () => {
           {/* Right Content Section */}
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Partner Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                 Becoming a partner with UXMM can provide you with an opportunity
                 to connect with a community of UX professionals and enthusiasts,
@@ -177,9 +177,9 @@ const Speaker = () => {
           </div>
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Mentor Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                 Becoming a mentor with UXMM can provide you with an opportunity
                 to share your expertise and knowledge with others, while also
@@ -202,9 +202,9 @@ const Speaker = () => {
           <div className="flex flex-col lg:flex-row rounded-lg shadow-md p-6 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-8 max-w-4xl w-full">
             <div className="flex flex-col justify-between lg:w-1/2">
               <div>
-                <h2 className="text-2xl font-semibold text-gray-800">
+                <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                   Mentor Program
-                </h2>
+                </div>
                 <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                   Becoming a mentor with UXMM can provide you with an
                   opportunity to share your expertise and knowledge with others,
@@ -245,9 +245,9 @@ const Speaker = () => {
           {/* Right Content Section */}
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Volunteer Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                 Becoming a volunteer with UXMM can provide you with an
                 opportunity to contribute to the development of the UX community

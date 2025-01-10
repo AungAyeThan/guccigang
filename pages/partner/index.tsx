@@ -137,7 +137,7 @@ const Partner = () => {
         {/* Right Decorative Dots */}
       </div>
 
-      <h2 className="text-center text-2xl md:text-3xl font-semibold mb-8 mt-7">
+      <h2 className="text-center font-plusJakarta font-[700] text-[24px] leading-[38px] mb-8 mt-12">
         Browse <span className="text-red-500">another programs</span> that we
         offer
       </h2>
@@ -156,9 +156,9 @@ const Partner = () => {
           {/* Right Content Section */}
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Mentor Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                 Becoming a mentor with UXMM can provide you with an opportunity
                 to share your expertise and knowledge with others, while also
@@ -187,14 +187,13 @@ const Partner = () => {
           </div>
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Speaker Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-[16px] leading-[26px] text-left">
-                Becoming a mentor with UXMM can provide you with an opportunity
-                to share your expertise and knowledge with others, while also
-                building your professional network and enhancing your leadership
-                skills.
+                Becoming a speaker with UXMM can provide you with an opportunity
+                to share your expertise and insights with a community of UX
+                professionals and enthusiasts in Myanmar.
               </p>
             </div>
             <a
@@ -212,14 +211,13 @@ const Partner = () => {
           <div className="flex flex-col lg:flex-row rounded-lg shadow-md p-6 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-8 max-w-4xl w-full">
             <div className="flex flex-col justify-between lg:w-1/2">
               <div>
-                <h2 className="text-2xl font-semibold text-gray-800">
+                <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                   Speaker Program
-                </h2>
+                </div>
                 <p className="mt-2 text-customgray font-poppins text-[16px] leading-[26px] text-left">
-                  Becoming a mentor with UXMM can provide you with an
-                  opportunity to share your expertise and knowledge with others,
-                  while also building your professional network and enhancing
-                  your leadership skills.
+                  Becoming a speaker with UXMM can provide you with an
+                  opportunity to share your expertise and insights with a
+                  community of UX professionals and enthusiasts in Myanmar.
                 </p>
               </div>
               <a
@@ -255,9 +253,9 @@ const Partner = () => {
           {/* Right Content Section */}
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Volunteer Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-[16px] leading-[26px] text-left">
                 Becoming a volunteer with UXMM can provide you with an
                 opportunity to contribute to the development of the UX community

@@ -15,7 +15,7 @@ const WhatWeDo = () => {
           <img
             src={EImageUri.Line}
             alt="wavy line"
-            className="w-20 h-auto md:ml-[500px] lg:ml-[87%] right-0 mx-auto"
+            className="w-20 h-auto md:ml-[500px] md:ml-[68%] lg:ml-[77%] xl:ml-[87%] right-0 mx-auto"
           />
         </div>
 

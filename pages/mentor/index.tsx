@@ -37,7 +37,7 @@ const MentorSection = () => {
         </div>
 
         {/* Description */}
-        <p className="text-customgray md:text-[16px] leading-[26px] mt-4 font-poppins md:w-[41%] text-center">
+        <p className="text-customgray md:text-[16px] leading-[26px] mt-4 font-poppins md:w-[85%] lg:w-[65%] xl:w-[47%] text-center">
           Become a mentor and help aspiring UX designers reach their full
           potential. By sharing your insights and experiences, you'll contribute
           to the growth and development of the UX community in Myanmar.
@@ -50,7 +50,7 @@ const MentorSection = () => {
           Become a mentor
         </a>
 
-        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[345px] min-[320px]:left-[20%]  lg:left-[25%]  hidden md:block">
+        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[345px] min-[320px]:left-[20%]  md:left-[8%] lg:left-[15%] xl:left-[25%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset2}
             alt="DoodleAsset"
@@ -144,7 +144,7 @@ const MentorSection = () => {
         </div>
       </div>
 
-      <h2 className="text-center text-2xl md:text-3xl font-semibold mb-8 mt-12">
+      <h2 className="text-center font-plusJakarta font-[700] text-[24px] leading-[38px] mb-8 mt-12">
         Browse <span className="text-red-500">another programs</span> that we
         offer
       </h2>
@@ -163,9 +163,9 @@ const MentorSection = () => {
           {/* Right Content Section */}
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Partner Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                 Becoming a partner with UXMM can provide you with an opportunity
                 to connect with a community of UX professionals and enthusiasts,
@@ -194,9 +194,9 @@ const MentorSection = () => {
           </div>
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Speaker Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                 Becoming a speaker with UXMM can provide you with an opportunity
                 to share your expertise and insights with a community of UX
@@ -218,9 +218,9 @@ const MentorSection = () => {
           <div className="flex flex-col lg:flex-row rounded-lg shadow-md p-6 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-8 max-w-4xl w-full">
             <div className="flex flex-col justify-between lg:w-1/2">
               <div>
-                <h2 className="text-2xl font-semibold text-gray-800">
+                <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                   Speaker Programs
-                </h2>
+                </div>
                 <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                   Becoming a speaker with UXMM can provide you with an
                   opportunity to share your expertise and insights with a
@@ -260,9 +260,9 @@ const MentorSection = () => {
           {/* Right Content Section */}
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Volunteer Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                 Becoming a volunteer with UXMM can provide you with an
                 opportunity to contribute to the development of the UX community

@@ -5,6 +5,7 @@ enum EImageUri {
   GroupPic = "/images/group-pic.png",
   Volunteer = "/images/volunteer.png",
   PartnerProgram = "/images/partner-program.png",
+  SpreakerProgram = "/images/speaker-program.png",
   MentorProgram = "/images/mentor-program.png",
   VolunteerProgram = "/images/volunteer-program.png",
   DoodleAsset1 = "/images/mentor-doodle.png",
@@ -126,7 +127,7 @@ const Volunteer = () => {
         {/* Right Decorative Dots */}
       </div>
 
-      <h2 className="text-center text-2xl md:text-3xl font-semibold mb-8 mt-[80px]">
+      <h2 className="text-center font-plusJakarta font-[700] text-[24px] leading-[38px] mb-8 mt-12">
         Browse <span className="text-red-500">another programs</span> that we
         offer
       </h2>
@@ -145,14 +146,14 @@ const Volunteer = () => {
           {/* Right Content Section */}
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Partner Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
-                Becoming a mentor with UXMM can provide you with an opportunity
-                to share your expertise and knowledge with others, while also
-                building your professional network and enhancing your leadership
-                skills.
+                Becoming a partner with UXMM can provide you with an opportunity
+                to connect with a community of UX professionals and enthusiasts,
+                as well as promote your brand or product to a highly engaged
+                audience.
               </p>
             </div>
             <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">
@@ -173,9 +174,9 @@ const Volunteer = () => {
           </div>
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                 Mentor Program
-              </h2>
+              </div>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                 Becoming a mentor with UXMM can provide you with an opportunity
                 to share your expertise and knowledge with others, while also
@@ -195,9 +196,9 @@ const Volunteer = () => {
           <div className="flex flex-col lg:flex-row rounded-lg shadow-md p-6 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-8 max-w-4xl w-full">
             <div className="flex flex-col justify-between lg:w-1/2">
               <div>
-                <h2 className="text-2xl font-semibold text-gray-800">
+                <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
                   Mentor Program
-                </h2>
+                </div>
                 <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
                   Becoming a mentor with UXMM can provide you with an
                   opportunity to share your expertise and knowledge with others,
@@ -226,7 +227,7 @@ const Volunteer = () => {
           {/* Left Image Section */}
           <div className="flex-shrink-0 lg:w-1/2">
             <img
-              src={EImageUri.VolunteerProgram}
+              src={EImageUri.SpreakerProgram}
               alt="Mentor Program"
               className="rounded-lg w-full h-[200px] object-cover"
             />
@@ -235,18 +236,17 @@ const Volunteer = () => {
           {/* Right Content Section */}
           <div className="flex flex-col justify-between lg:w-1/2">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-800">
-                Volunteer Program
-              </h2>
+              <div className="font-plusJakarta text-[32px] leading-[42px] font-[700] text-customgray">
+                Speaker Program
+              </div>
               <p className="mt-2 text-customgray font-poppins text-base font-normal leading-[26px] text-left">
-                Becoming a mentor with UXMM can provide you with an opportunity
-                to share your expertise and knowledge with others, while also
-                building your professional network and enhancing your leadership
-                skills.
+                Becoming a speaker with UXMM can provide you with an opportunity
+                to share your expertise and insights with a community of UX
+                professionals and enthusiasts in Myanmar.
               </p>
             </div>
             <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">
-              Become a Volunteer
+              Become a Speaker
             </button>
           </div>
         </div>

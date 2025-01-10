@@ -261,7 +261,11 @@ const Members: React.FC = () => {
             />
           </div>
           <ModalComponent
-            isOpen={openModal === member.key && member.key !== "thane"}
+            isOpen={
+              openModal === member.key &&
+              member.key !== "thane" &&
+              member.key !== "aung"
+            }
             onClose={closeModalHandler}
             title={member.title}
             subtitle={member.subtitle}

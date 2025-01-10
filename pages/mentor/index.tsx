@@ -145,7 +145,7 @@ const MentorSection = () => {
       </div>
 
       <h2 className="text-center font-plusJakarta font-[700] text-[24px] leading-[38px] mb-8 mt-12">
-        Browse <span className="text-red-500">another programs</span> that we
+        Browse <span className="uxmm-text-color">another programs</span> that we
         offer
       </h2>
 

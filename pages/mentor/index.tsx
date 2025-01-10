@@ -23,7 +23,7 @@ const MentorSection = () => {
         {/* Title */}
 
         <div className="">
-          <h1 className="text-3xl md:text-5xl font-bold leading-[54px] text-[40px]">
+          <h1 className="font-plusJakarta font-[700] leading-[54px] text-[40px]">
             Become a <span className="uxmm-text-color">Mentor</span>
           </h1>
           {/* This doodle will now be positioned using absolute positioning  min-[320px]:top-[200px] */}

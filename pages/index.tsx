@@ -94,7 +94,7 @@ export default function Home() {
 
           {/* Middle Text Section */}
           <div className="text-center max-w-lg">
-            <h2 className="text-[24px] leading-[38px] font-[700] font-bold text-customgray mb-4">
+            <h2 className="text-[24px] leading-[38px] font-[700] font-plusJakarta text-customgray mb-4">
               About{" "}
               <span className="uxmm-text-color font-plusJakarta">UXMM</span>
             </h2>

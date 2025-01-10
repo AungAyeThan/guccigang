@@ -25,12 +25,12 @@ const OurValue = () => {
       {/* Content (Text and Values Grid) */}
       <div className="relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold font-plusJakarta text-customgray">
+          <h2 className="text-[24px] leading-[38px] font-[700] font-plusJakarta text-customgray">
             Our <span className="uxmm-text-color">Values</span>
             <img
               src={EImageUri.Line}
               alt="wavy line"
-              className="absolute w-20 h-auto left-[70px] right-0 mx-auto top-[40px]"
+              className="absolute w-20 h-auto left-[45px] right-0 mx-auto top-[40px]"
             />
           </h2>
         </div>
@@ -46,7 +46,7 @@ const OurValue = () => {
                 className="w-16 h-16"
               />
             </div>
-            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+            <h3 className="font-[600] text-[16px] leading-[26px] font-plusJakarta mb-5">
               Community Focus
             </h3>
             <p className="text-center text-[14px] font-[400] leading-[22px] font-poppins text-customgray">
@@ -64,7 +64,7 @@ const OurValue = () => {
                 className="w-16 h-16"
               />
             </div>
-            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+            <h3 className="font-[600] text-[16px] leading-[26px] font-plusJakarta mb-5">
               Empowerment
             </h3>
             <p className="text-center text-[14px] font-[400] leading-[22px] font-poppins text-customgray">
@@ -82,7 +82,7 @@ const OurValue = () => {
                 className="w-16 h-16"
               />
             </div>
-            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+            <h3 className="font-[600] text-[16px] leading-[26px] font-plusJakarta mb-5">
               Collaboration
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
@@ -100,7 +100,7 @@ const OurValue = () => {
                 className="w-16 h-16"
               />
             </div>
-            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+            <h3 className="font-[600] text-[16px] leading-[26px] font-plusJakarta mb-5">
               Innovation
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
@@ -117,7 +117,7 @@ const OurValue = () => {
                 className="w-16 h-16"
               />
             </div>
-            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+            <h3 className="font-[600] text-[16px] leading-[26px] font-plusJakarta mb-5">
               Sustainability Focused
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
@@ -134,7 +134,7 @@ const OurValue = () => {
                 className="w-16 h-16"
               />
             </div>
-            <h3 className="text-lg font-bold font-plusJakarta mb-5">
+            <h3 className="font-[600] text-[16px] leading-[26px] font-plusJakarta mb-5">
               Impactful
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">

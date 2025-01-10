@@ -118,7 +118,7 @@ const ImageCarousel = () => {
           </div>
 
           {/* Vision Section */}
-          <div className="flex-1 max-w-lg md:max-w-[45%] mx-auto md:mx-0 mt-[10%]">
+          <div className="flex-1 max-w-lg md:max-w-[45%] mx-auto md:mx-0">
             <h3 className="text-3xl font-semibold leading-[42px] text-left font-plusJakarta">
               Visions
             </h3>

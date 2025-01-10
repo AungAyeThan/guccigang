@@ -33,27 +33,27 @@ const Partners = () => {
           <img
             src={EImageUri.UXSEA}
             alt="UXSEA Society"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
           <img
             src={EImageUri.UXPH}
             alt="UX PH"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
           <img
             src={EImageUri.UXTesting}
             alt="UX Testing"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
           <img
             src={EImageUri.UXVN}
             alt="UX VN"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
           <img
             src={EImageUri.savvysummit}
             alt="savvy summit"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
         </div>
       </div>
@@ -67,32 +67,32 @@ const Partners = () => {
           <img
             src={EImageUri.DesignMatter}
             alt="Design Matters"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
           <img
             src={EImageUri.MMProjects}
             alt="MMProjects"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
           <img
             src={EImageUri.Phandeeyar}
             alt="Phandeeyar"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
           <img
             src={EImageUri.productbase}
             alt="productbase"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
           <img
             src={EImageUri.waimyanmar}
             alt="waimyanmar"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
           <img
             src={EImageUri.xers}
             alt="xers"
-            className="w-16 h-auto mx-auto"
+            className="w-[50%] h-auto mx-auto"
           />
         </div>
       </div>

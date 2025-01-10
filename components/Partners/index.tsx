@@ -30,31 +30,61 @@ const Partners = () => {
         </p>
 
         <div className="grid grid-cols-2 mt-8 md:grid-cols-5 justify-center mx-auto lg:mx-[150px]">
-          <img
-            src={EImageUri.UXSEA}
-            alt="UXSEA Society"
-            className="w-[50%] h-auto mx-auto"
-          />
-          <img
-            src={EImageUri.UXPH}
-            alt="UX PH"
-            className="w-[50%] h-auto mx-auto"
-          />
-          <img
-            src={EImageUri.UXTesting}
-            alt="UX Testing"
-            className="w-[50%] h-auto mx-auto"
-          />
-          <img
-            src={EImageUri.UXVN}
-            alt="UX VN"
-            className="w-[50%] h-auto mx-auto"
-          />
-          <img
-            src={EImageUri.savvysummit}
-            alt="savvy summit"
-            className="w-[50%] h-auto mx-auto"
-          />
+          <a
+            href="https://uxsea.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={EImageUri.UXSEA}
+              alt="UXSEA Society"
+              className="w-[80px] h-auto mx-auto"
+            />
+          </a>
+          <a
+            href="https://www.uxph.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={EImageUri.UXPH}
+              alt="UX PH"
+              className="w-[80px] h-auto mx-auto"
+            />
+          </a>
+          <a
+            href="https://www.uxtesting.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={EImageUri.UXTesting}
+              alt="UX Testing"
+              className="w-[80px] h-auto mx-auto"
+            />
+          </a>
+          <a
+            href="https://www.uxvn.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={EImageUri.UXVN}
+              alt="UX VN"
+              className="w-[80px] h-auto mx-auto"
+            />
+          </a>
+          <a
+            href="https://www.savvyuxsummit.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={EImageUri.savvysummit}
+              alt="savvy summit"
+              className="w-[80px] h-auto mx-auto"
+            />
+          </a>
         </div>
       </div>
       <div className="bg-white py-8 px-4 md:px-16">
@@ -67,33 +97,51 @@ const Partners = () => {
           <img
             src={EImageUri.DesignMatter}
             alt="Design Matters"
-            className="w-[50%] h-auto mx-auto"
+            className="w-[80px] h-auto mx-auto"
           />
           <img
             src={EImageUri.MMProjects}
             alt="MMProjects"
-            className="w-[50%] h-auto mx-auto"
+            className="w-[80px] h-auto mx-auto"
           />
           <img
             src={EImageUri.Phandeeyar}
             alt="Phandeeyar"
-            className="w-[50%] h-auto mx-auto"
+            className="w-[80px] h-auto mx-auto"
           />
-          <img
-            src={EImageUri.productbase}
-            alt="productbase"
-            className="w-[50%] h-auto mx-auto"
-          />
-          <img
-            src={EImageUri.waimyanmar}
-            alt="waimyanmar"
-            className="w-[50%] h-auto mx-auto"
-          />
-          <img
-            src={EImageUri.xers}
-            alt="xers"
-            className="w-[50%] h-auto mx-auto"
-          />
+          <a
+            href="https://www.productbaze.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={EImageUri.productbase}
+              alt="productbase"
+              className="w-[80px] h-auto mx-auto"
+            />
+          </a>
+          <a
+            href="https://www.womeninai.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={EImageUri.waimyanmar}
+              alt="waimyanmar"
+              className="w-[80px] h-auto mx-auto"
+            />
+          </a>
+          <a
+            href="https://xers.design/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={EImageUri.xers}
+              alt="xers"
+              className="w-[80px] h-auto mx-auto"
+            />
+          </a>
         </div>
       </div>
     </>

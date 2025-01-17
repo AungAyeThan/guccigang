@@ -13,7 +13,7 @@ enum EImageUri {
 const MentorSection = () => {
   return (
     <>
-      <div className="flex flex-col items-center text-center px-6 py-12 md:px-16">
+      <div className="flex flex-col items-center text-center px-6 py-12">
         <div className="text-sm mb-4 font-poppins text-base leading-[26px] text-left">
           <span className="text-sideMapGray">Programs</span>{" "}
           <span className="mx-2">/</span>{" "}
@@ -22,22 +22,22 @@ const MentorSection = () => {
 
         {/* Title */}
 
-        <div className="">
-          <h1 className="font-plusJakarta font-[700] leading-[54px] text-[40px]">
-            Become a <span className="uxmm-text-color">Mentor</span>
-          </h1>
-          {/* This doodle will now be positioned using absolute positioning  min-[320px]:top-[200px] */}
-          <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[85%] lg:left-[72%]  hidden md:block">
-            <img
-              src={EImageUri.DoodleAsset1}
-              alt="DoodleAsset"
-              className="absw-12 h-12 md:h-[50px] lg:h-[50px] xl:h-[60px]"
-            />
-          </div>
+        <h1 className="font-plusJakarta font-bold leading-[54px] text-[40px] text-center mx-auto max-w-lg sm:max-w-xl md:max-w-xl lg:max-w-3xl xl:max-w-3xl">
+          Share your knowledges as a{" "}
+          <span className="uxmm-text-color">UX Mentor</span>
+        </h1>
+
+        {/* This doodle will now be positioned using absolute positioning  min-[320px]:top-[200px] */}
+        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[85%] lg:left-[88%] xl:left-[75%]  hidden md:block">
+          <img
+            src={EImageUri.DoodleAsset1}
+            alt="DoodleAsset"
+            className="absw-12 h-12 md:h-[50px] lg:h-[50px] xl:h-[60px]"
+          />
         </div>
 
         {/* Description */}
-        <p className="text-customgray md:text-[16px] leading-[26px] mt-4 font-poppins md:w-[85%] lg:w-[65%] xl:w-[47%] text-center">
+        <p className="text-customgray text-center font-poppins leading-[26px] text-[16px] mt-4 mx-auto max-w-xl sm:max-w-lg lg:max-w-[521%] xl:max-w-[42%]">
           Become a mentor and help aspiring UX designers reach their full
           potential. By sharing your insights and experiences, you'll contribute
           to the growth and development of the UX community in Myanmar.
@@ -50,7 +50,7 @@ const MentorSection = () => {
           Become a mentor
         </a>
 
-        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[345px] min-[320px]:left-[20%]  md:left-[8%] lg:left-[15%] xl:left-[25%]  hidden md:block">
+        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[445px] lg:top-[345px] min-[320px]:left-[20%]  md:left-[8%] lg:left-[15%] xl:left-[25%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset2}
             alt="DoodleAsset"
@@ -82,29 +82,34 @@ const MentorSection = () => {
                 className="h-auto max-w-full"
               />
             </div>
-            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0 list-disc list-inside">
+            <ul className="max-w-xl font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:py-0 list-disc list-inside">
               <li>
-                <b>Inspire the next generation:</b> Make a positive impact on
-                the careers of young designers.
+                <b className="uxmm-text-color">Inspire the next generation:</b>{" "}
+                Make a positive impact on the careers of young designers.
               </li>
               <li>
-                <b>Network with peers:</b> Connect with other experienced UX
-                professionals.
+                <b className="uxmm-text-color">Network with peers:</b> Connect
+                with other experienced UX professionals.
               </li>
               <li>
-                <b>Enhance your reputation:</b> Establish yourself as a thought
-                leader in the field.
+                <b className="uxmm-text-color">Enhance your reputation:</b>{" "}
+                Establish yourself as a thought leader in the field.
               </li>
               <li>
-                <b>Give back to the community:</b> Contribute to the development
-                of the UX community in Myanmar.
+                <b className="uxmm-text-color">Give back to the community:</b>{" "}
+                Contribute to the development of the UX community in Myanmar.
               </li>
               <li>
-                <b>Develop your leadership skills:</b> Guide and inspire others.
+                <b className="uxmm-text-color">
+                  Develop your leadership skills:
+                </b>{" "}
+                Guide and inspire others.
               </li>
               <li>
-                <b>Stay connected to the industry:</b> Stay up-to-date on the
-                latest trends and best practices.
+                <b className="uxmm-text-color">
+                  Stay connected to the industry:
+                </b>{" "}
+                Stay up-to-date on the latest trends and best practices.
               </li>
             </ul>
           </div>
@@ -113,12 +118,12 @@ const MentorSection = () => {
 
       <div className="flex flex-col md:flex-row items-center justify-between ml-0 md:ml-[14%]">
         {/* Left Content */}
-        <div className="text-center md:text-left max-w-lg px-6 py-12">
-          <h2 className="text-[30px] font-extrabold leading-[44px] text-left font-plusJakarta text-customgray">
+        <div className="text-center md:text-left max-w-xl px-6 py-12">
+          <span className="text-[32px] font-[700] leading-[54px] text-left font-plusJakarta text-customgray">
             It’s easier than you think. <br />
             <span className="uxmm-text-color">Join us.</span> We’ll help you
             every step of the way.
-          </h2>
+          </span>
 
           <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
             <a
@@ -135,8 +140,7 @@ const MentorSection = () => {
 
       <div className="bg-gray-100 p-5">
         <p className="text-center text-[24px] font-[700] leading-[38px] mb-[15px] font-plusJakarta">
-          The Heart of UXMM:{" "}
-          <span className="uxmm-text-color block sm:inline">Our Core Team</span>
+          Meet Our <span className="uxmm-text-color">Mentors</span>
         </p>
 
         <div className="flex justify-center">

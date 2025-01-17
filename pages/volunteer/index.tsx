@@ -45,9 +45,12 @@ const Volunteer = () => {
           world.
         </p>
 
-        <button className="mt-6 px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:from-pink-600 hover:to-red-600 transition">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc0sm1rEZOzyG__uQYZ7gBKlECL3a3dx82GdG7_jzomuRhSvg/viewform"
+          className="mt-6 px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:from-pink-600 hover:to-red-600 transition"
+        >
           Become a volunteer
-        </button>
+        </a>
 
         <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[425px] xl:top-[405px] min-[320px]:left-[20%] md:left-[10%] lg:left-[15%] xl:left-[25%]  hidden md:block">
           <img

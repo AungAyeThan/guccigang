@@ -1,10 +1,3 @@
-enum EImageUri {
-  IXDA = "/images/ixda.png",
-  UXMY = "/images/uxmy.png",
-  UXPH = "/images/uxph.png",
-  UXSEA = "/images/uxsea.png",
-}
-
 const GetInTouch = () => {
   return (
     <div className="bg-pink-50 py-12 px-4 text-center">
@@ -14,11 +7,11 @@ const GetInTouch = () => {
       </h2>
       <p className="mt-5 mx-auto text-customgray text-center font-[400] font-poppins text-[16px] leading-[26px] max-w-xs md:max-w-xl ">
         Please don't hesitate to drop us a line.
-        <p>
+        <span>
           You can reach us at the email address provided on our website, and{" "}
           <br />
           we will do our utmost to get back to you in a timely manner.
-        </p>
+        </span>
       </p>
 
       <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row">

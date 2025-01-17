@@ -122,9 +122,9 @@ const ModalComponent: React.FC<ModalProps> = ({
 
         {/* Modal scrollable content */}
         <div className="max-h-[200px] md:max-h-[250px] overflow-y-auto">
-          <p className="text-gray-600 text-[14px] leading-[22px] font-[400]">
-            <p dangerouslySetInnerHTML={{ __html: about }} />
-          </p>
+          <div className="text-gray-600 text-[14px] leading-[22px] font-[400]">
+            <span dangerouslySetInnerHTML={{ __html: about }} />
+          </div>
         </div>
       </div>
     </div>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import ModalComponent from "../utils/ModalPopup";
 import CardComponent from "../utils/Card";
-import { link } from "fs";
 
 enum EImageUri {
   WaiYiMonSoe = "/images/waiyimonsoe.png",

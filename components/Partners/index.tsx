@@ -20,14 +20,18 @@ const Partners = () => {
       <div className="bg-white py-8 px-4 md:px-16">
         <h2 className="text-center font-[700] leading-[38px] text-[24px] font-plusJakarta">
           <span className="text-customgray">Our</span>{" "}
-          <span className="uxmm-text-color">International Partners</span>
+          <span className="uxmm-text-color">Partners</span>
         </h2>
-        <p className="mt-4 text-center text-customgray font-poppins text-[16px] leading-[26px] font-[400]">
-          Join our growing network of
-          <span className="uxmm-text-color"> local</span> and{" "}
-          <span className="uxmm-text-color">international partners</span>
-          <p>who share our commitment to giving back to the community.</p>
-        </p>
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="mt-4 text-customgray font-poppins text-[16px] leading-[26px] font-[400]">
+            Join our growing network of local and international partners who
+            share our commitment to giving back to the community.
+            <br />
+            UXMM has numerous partners both
+            <span className="uxmm-text-color"> locally</span> and{" "}
+            <span className="uxmm-text-color">internationally</span>.
+          </p>
+        </div>
 
         <div className="grid grid-cols-2 mt-8 md:grid-cols-5 justify-center mx-auto lg:mx-[150px]">
           <a
@@ -38,7 +42,7 @@ const Partners = () => {
             <img
               src={EImageUri.UXSEA}
               alt="UXSEA Society"
-              className="w-[80px] h-auto mx-auto"
+              className="w-[100px] h-auto mx-auto"
             />
           </a>
           <a
@@ -49,7 +53,7 @@ const Partners = () => {
             <img
               src={EImageUri.UXPH}
               alt="UX PH"
-              className="w-[80px] h-auto mx-auto"
+              className="w-[100px] h-auto mx-auto"
             />
           </a>
           <a
@@ -60,7 +64,7 @@ const Partners = () => {
             <img
               src={EImageUri.UXTesting}
               alt="UX Testing"
-              className="w-[80px] h-auto mx-auto"
+              className="w-[100px] h-auto mx-auto"
             />
           </a>
           <a
@@ -71,7 +75,7 @@ const Partners = () => {
             <img
               src={EImageUri.UXVN}
               alt="UX VN"
-              className="w-[80px] h-auto mx-auto"
+              className="w-[100px] h-auto mx-auto"
             />
           </a>
           <a
@@ -82,32 +86,27 @@ const Partners = () => {
             <img
               src={EImageUri.savvysummit}
               alt="savvy summit"
-              className="w-[80px] h-auto mx-auto"
+              className="w-[100px] h-auto mx-auto"
             />
           </a>
         </div>
       </div>
-      <div className="bg-white py-8 px-4 md:px-16">
-        <h2 className="text-center font-[700] leading-[38px] text-[24px] font-plusJakarta">
-          <span className="text-customgray">Our</span>{" "}
-          <span className="uxmm-text-color">Local Partners</span>
-        </h2>
-
-        <div className="grid grid-cols-2 mt-8 md:grid-cols-6 justify-center mx-auto lg:mx-[150px]">
+      <div className="bg-white">
+        <div className="grid grid-cols-2 mt-3 md:grid-cols-6 justify-center mx-auto lg:mx-[200px] mb-[100px]">
           <img
             src={EImageUri.DesignMatter}
             alt="Design Matters"
-            className="w-[80px] h-auto mx-auto"
+            className="w-[100px] h-auto mx-auto"
           />
           <img
             src={EImageUri.MMProjects}
             alt="MMProjects"
-            className="w-[80px] h-auto mx-auto"
+            className="w-[100px] h-auto mx-auto"
           />
           <img
             src={EImageUri.Phandeeyar}
             alt="Phandeeyar"
-            className="w-[80px] h-auto mx-auto"
+            className="w-[100px] h-auto mx-auto"
           />
           <a
             href="https://www.productbaze.com/"
@@ -117,7 +116,7 @@ const Partners = () => {
             <img
               src={EImageUri.productbase}
               alt="productbase"
-              className="w-[80px] h-auto mx-auto"
+              className="w-[100px] h-auto mx-auto"
             />
           </a>
           <a
@@ -128,7 +127,7 @@ const Partners = () => {
             <img
               src={EImageUri.waimyanmar}
               alt="waimyanmar"
-              className="w-[80px] h-auto mx-auto"
+              className="w-[100px] h-auto mx-auto"
             />
           </a>
           <a
@@ -139,7 +138,7 @@ const Partners = () => {
             <img
               src={EImageUri.xers}
               alt="xers"
-              className="w-[80px] h-auto mx-auto"
+              className="w-[100px] h-auto mx-auto rounded-lg"
             />
           </a>
         </div>

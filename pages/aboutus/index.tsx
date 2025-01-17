@@ -30,9 +30,9 @@ const ImageCarousel = () => {
   }
   return (
     <>
-      <div className="font-[700] text-[40px] leading-[54px] font-plusJakarta lg:ml-[250px] max-w-[700px] mt-[30px] mb-[30px] text-center lg:text-left">
-        <span className="uxmm-text-color">UXMM</span>{" "}
-        <span>: Empowering Myanmar's Design Community</span>
+      <div className="font-[700] text-[40px] leading-[54px] font-plusJakarta lg:ml-[250px] max-w-[620px] mt-[30px] mb-[30px] text-center lg:text-left">
+        We are <span className="uxmm-text-color">non-profit organization</span>,
+        a group of passionate UX practitioners in Myanmar
       </div>
 
       {isClient && !isMobile && (

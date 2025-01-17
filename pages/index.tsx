@@ -8,7 +8,7 @@ enum EImageUri {
   Phyokyawheinicon = "/images/phyokyawhein-icon.png",
   Alvin = "/images/alvin-icon.png",
   Key = "/images/key-icon.png",
-  Workshop = "/images/physical-workshop.png",
+  Workshop = "/images/physical-workshops.png",
   GroupPicRight = "/images/group_12399_r.png",
   GroupPicLeft = "/images/image_828_l.png",
   DoodleAsset3 = "/images/doodle-assets-3.svg",
@@ -44,7 +44,7 @@ export default function Home() {
                 className="h-auto max-w-full"
               />
             </div>
-            <p className="md:max-w-lg font-poppins text-[16px] font-[400] leading-[26px] text-customgray mt-5 md:py-0 text-left">
+            <p className="md:max-w-lg font-poppins text-[16px] font-[400] leading-[26px] text-customgray mt-3 md:py-0 text-left">
               UXMM is a pioneering non-profit organization established in 2020.
               Driven by a dedicated team of volunteers, we've been empowering
               Myanmar's design community and fostering a culture of innovation
@@ -55,15 +55,19 @@ export default function Home() {
             <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
               <a
                 href="mailto:info@uxmm.org"
-                className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg border-2"
+                className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 shadow-lg border-1"
               >
-                Join With Us →
+                <span className="text-white font-poppins text-[16px] leading-[26px] font-[500]">
+                  Join With Us →
+                </span>
               </a>
               <a
                 href="/events"
-                className="rounded-full border border-pink-500 bg-white px-6 py-3 font-semibold text-pink-500 shadow-lg hover:bg-pink-200 border-2"
+                className="rounded-full border border-pink-500 bg-white px-6 py-3 shadow-lg hover:bg-pink-200 border-2"
               >
-                Browse our Events
+                <span className="uxmm-text-color font-poppins text-[16px] leading-[26px] font-[500]">
+                  Browse Events
+                </span>
               </a>
             </div>
           </div>
@@ -93,10 +97,9 @@ export default function Home() {
           </div>
 
           {/* Middle Text Section */}
-          <div className="text-center max-w-lg">
+          <div className="text-center max-w-xl">
             <h2 className="text-[24px] leading-[38px] font-[700] font-plusJakarta text-customgray mb-4">
-              About{" "}
-              <span className="uxmm-text-color font-plusJakarta">UXMM</span>
+              About <span className="uxmm-text-color">UXMM</span>
             </h2>
             <p className="mb-6 text-center font-poppins text-[16px] font-[400] leading-[26px] text-customgray">
               UXMM is a dynamic non-profit organization dedicated to advancing
@@ -109,9 +112,11 @@ export default function Home() {
             <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-center">
               <a
                 href="/aboutus"
-                className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg inline-block"
+                className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 shadow-lg inline-block"
               >
-                About Us &rarr;
+                <span className="text-white font-poppins text-[16px] leading-[26px] font-[500]">
+                  About Us &rarr;
+                </span>
               </a>
             </div>
           </div>
@@ -130,14 +135,15 @@ export default function Home() {
       </div>
 
       <p className="mt-3 text-center text-[24px] font-[700] leading-[38px] sm:mt-4 font-plusJakarta">
-        Community <span className="uxmm-text-color">Event</span>
+        <span className="uxmm-text-color">Connect</span> and{" "}
+        <span className="uxmm-text-color">Collaborate</span>
       </p>
 
       <div className="flex justify-center md:hidden md:w-1/2 md:justify-end px-4 py-4">
         <img
           src={EImageUri.Workshop}
           alt="physical workshop"
-          className="h-auto max-w-full rounded-lg"
+          className="h-auto max-w-full rounded-lg  border-4 border-white shadow-lg"
         />
       </div>
 
@@ -145,28 +151,26 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col items-start md:flex-row md:justify-between md:pl-[100px]">
           <div className="mb-7 text-center md:text-left">
             <div className="flex items-center justify-between">
-              <h2 className="font-poppins text-[16px] leading-[26px] font-[400] text-mildGray mt-10">
-                Physical Workshop
-              </h2>
               {/* This doodle will now be positioned using absolute positioning */}
               <div className="absolute top-[65px] md:left-[450px] lg:left-[450px] xl:left-[650px] 2xl:left-[45%] hidden md:block">
                 <img
                   src={EImageUri.DoodleAsset4}
                   alt="DoodleAsset4"
-                  className="w-12 h-12 lg:w-[150px] md:h-[50px] lg:h-[50px] xl:h-[80px] 2xl:h-[80px]"
+                  className="w-12 h-12 lg:w-[70px] md:h-[50px] lg:h-[80px] xl:h-[110px] 2xl:h-[80px]"
                 />
               </div>
             </div>
 
-            <h1 className="text-left font-plusJakarta text-[20px] font-[700] mb-3 md:text-[24px] font-bold leading-[38px] text-customgray">
-              From Ideation to Implementation
+            <h1 className="text-left font-plusJakarta text-[24px] font-[700] mb-3 md:text-[24px] font-bold leading-[38px] text-customgray mt-[100px]">
+              Expand Your Network and Learn
             </h1>
 
-            <p className="mb-4 max-w-md font-poppins font-[400] text-[16px] leading-[26px] text-customgray text-left">
-              Attend our workshop to learn how to create a design system from
-              ideation to implementation. Ideal for beginners and design system
-              refreshers, discover best practices for showcasing your skills and
-              experience effectively.
+            <p className="mb-4 max-w-lg font-poppins font-[400] text-[16px] leading-[26px] text-customgray text-left">
+              Join our exciting events and connect with like-minded designers.
+              From thought-provoking talks to practical workshops, there's
+              something for everyone. (OR) Discover new ideas and build
+              relationships at our community events. Join us for engaging talks,
+              interactive workshops, and social gatherings.
             </p>
 
             {/* Button */}
@@ -179,11 +183,12 @@ export default function Home() {
           </div>
 
           {/* Right Section: Image */}
+
           <div className="flex hidden justify-center md:block md:w-1/2 md:justify-end">
             <img
               src={EImageUri.Workshop}
               alt="physical workshop"
-              className="h-auto max-w-full rounded-lg"
+              className="h-auto max-w-full rounded-lg  border-4 border-white shadow-lg"
             />
           </div>
         </div>

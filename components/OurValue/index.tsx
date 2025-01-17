@@ -86,8 +86,9 @@ const OurValue = () => {
               Collaboration
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
-              We believe in the power of teamwork and partnerships to achieve
-              great results.
+              We firmly believe that by working together and fostering strong
+              partnerships, we can harness the collective strength of teamwork
+              to achieve exceptional and impactful results.
             </p>
           </div>
 
@@ -104,7 +105,9 @@ const OurValue = () => {
               Innovation
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
-              We encourage creativity and continuous learning.
+              We actively encourage creativity and embrace a culture of
+              continuous learning, fostering innovation and personal growth to
+              drive meaningful progress.
             </p>
           </div>
 
@@ -121,7 +124,9 @@ const OurValue = () => {
               Sustainability Focused
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
-              We strive to create sustainable and long-lasting solutions.
+              We are dedicated to developing sustainable and enduring solutions
+              that stand the test of time, ensuring a positive and lasting
+              impact.
             </p>
           </div>
 
@@ -138,8 +143,9 @@ const OurValue = () => {
               Impactful
             </h3>
             <p className="text-center text-[14px] font-normal leading-[22px] text-customgray font-poppins">
-              We aim to make a positive and lasting impact on society through
-              our work.
+              We are committed to creating a meaningful and enduring impact on
+              society through our efforts, striving to contribute positively to
+              the world around us.
             </p>
           </div>
         </div>

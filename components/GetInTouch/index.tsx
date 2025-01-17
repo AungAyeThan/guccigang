@@ -24,9 +24,11 @@ const GetInTouch = () => {
       <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row">
         <a
           href="mailto:info@uxmm.org"
-          className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 text-white shadow-lg font-poppins border-2"
+          className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3"
         >
-          Contact Us
+          <span className="text-[16px] leading-[26px] font-[500] text-white  font-poppins">
+            Contact Us
+          </span>
         </a>
       </div>
     </div>

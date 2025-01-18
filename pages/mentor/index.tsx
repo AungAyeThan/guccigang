@@ -1,6 +1,7 @@
 import GetInTouch from "@/components/GetInTouch";
 import React from "react";
-import Members from "@/components/common/Members";
+
+import Mentors from "@/components/common/Mentors";
 enum EImageUri {
   SpeakerProgram = "/images/speaker-program.png",
   PartnerProgram = "/images/partner-program.png",
@@ -144,7 +145,7 @@ const MentorSection = () => {
         </p>
 
         <div className="flex justify-center">
-          <Members />
+          <Mentors />
         </div>
       </div>
 

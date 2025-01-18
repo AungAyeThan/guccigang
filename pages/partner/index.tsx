@@ -23,10 +23,9 @@ const Partner = () => {
 
         {/* Title */}
         <h1 className="leading-[54px] text-[40px] font-[700] font-plusJararta lg:w-[45%] text-center">
-          <span className="uxmm-text-color"> Partner with Us </span> to Shape
-          Myanmar's Design Community
+          Become a <span className="uxmm-text-color"> Partner</span>
         </h1>
-        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[85%] lg:left-[72%]  hidden md:block">
+        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[30%] sm:left-[79%] md:left-[85%] lg:left-[78%] xl:left-[72%] hidden md:block">
           <img
             src={EImageUri.DoodleAsset1}
             alt="DoodleAsset"
@@ -35,17 +34,10 @@ const Partner = () => {
         </div>
 
         {/* Description */}
-        <p className="md:text-[16px] leading-[26px] mt-4 font-poppins text-customgray lg:w-[43%]">
-          Become a community partner and help us organize events and initiatives
-          that inspire and educate designers across Myanmar. We're looking for
-          collaborative partners to share resources, from event spaces to
-          marketing efforts. Let's work together to build a stronger design
-          community.
-          <br />
-          <br />
-          ✍️ We're unable to provide financial sponsorships at this time. We're
-          interested in supporting your event in other ways. Let's discuss the
-          possibilities.
+        <p className="md:text-[16px] leading-[26px] mt-4 font-poppins text-customgray w-[85%] lg:w-[63%] xl:w-[43%]">
+          Becoming a partner with UXMM can provide you with an opportunity to
+          connect with a community of UX professionals and enthusiasts, as well
+          as promote your brand or product to a highly engaged audience.
         </p>
 
         <a
@@ -55,7 +47,7 @@ const Partner = () => {
           Become a Partner
         </a>
 
-        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] min-[720px]:top-[550px] lg:top-[510px] min-[320px]:left-[20%] min-[760px]:left-[5%] lg:left-[25%]  hidden md:block">
+        <div className="absolute sm:top-[100px] md:top-[350px] lg:top-[350px] min-[320px]:left-[20%] min-[760px]:left-[5%] lg:left-[15%] xl:left-[20%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset2}
             alt="DoodleAsset"
@@ -64,7 +56,7 @@ const Partner = () => {
         </div>
       </div>
 
-      <Partners />
+      {/* <Partners /> */}
 
       <div className="flex px-4 py-12">
         <div className="mx-auto flex max-w-5xl flex-col items-center md:flex-row md:justify-between">
@@ -72,7 +64,7 @@ const Partner = () => {
             <img
               src={EImageUri.PartnerProgram}
               alt="uxmm"
-              className="h-auto max-w-full"
+              className="h-auto max-w-full rounded-lg border-4 border-white shadow-md"
             />
           </div>
           <div className="md:mt-5 md:w-1/2 md:text-left">
@@ -89,35 +81,23 @@ const Partner = () => {
                 className="h-auto max-w-full"
               />
             </div>
-            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:m-4 md:py-0 list-disc list-inside">
-              <li>
-                <b>Increase brand visibility:</b> Reach a wider audience of
-                designers and industry professionals.
-              </li>
-              <li>
-                <b>Gain industry insights:</b> Get valuable insights into the
-                latest design trends and best practices.
-              </li>
-              <li>
-                <b>Build your reputation:</b> Establish your brand as a leader
-                in the design community.
-              </li>
-              <li>
-                <b>Attract top talent:</b> Connect with talented designers and
-                potential employees.
-              </li>
-              <li>
-                <b>Showcase your expertise:</b> Share your knowledge through
-                speaking engagements and workshops.
-              </li>
-            </ul>
+            <div className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:m-4 md:py-0 list-disc list-inside">
+              <p>
+                As a partner, you can collaborate with UXMM on events,
+                workshops, or talks, and showcase your expertise or products to
+                the community. This partnership can also help you to stay
+                up-to-date with the latest UX trends and best practices, network
+                with other UX professionals, and potentially attract new talent
+                to your organization.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-between ml-0 md:ml-[14%]">
         {/* Left Content */}
-        <div className="text-center md:text-left max-w-lg px-6 py-12">
+        <div className="text-center md:text-left px-6 py-12">
           <h2 className="text-[30px] font-extrabold leading-[44px] text-left font-plusJakarta text-customgray">
             It’s easier than you think. <br />
             <span className="uxmm-text-color">Join us.</span> We’ll help you

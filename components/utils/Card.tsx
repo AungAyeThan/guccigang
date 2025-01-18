@@ -20,7 +20,16 @@ const CardComponent: React.FC<CardProps> = ({ title, subtitle, image }) => {
       </div>
       <div className="w-[200px] ml-4">
         <span className="font-poppins text-[14px] leading-[22px] font-[400] text-customgray">
-          {subtitle}
+          {subtitle.split(",").map((text, index) => (
+            <React.Fragment key={index}>
+              {text}
+              {index < subtitle.split(",").length - 1 && (
+                <>
+                  ,<br />
+                </>
+              )}
+            </React.Fragment>
+          ))}
         </span>
       </div>
     </div>

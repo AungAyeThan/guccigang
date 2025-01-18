@@ -23,10 +23,10 @@ const Volunteer = () => {
 
         {/* Title */}
         <h1 className="font-bold leading-[54px] font-plusJakarta text-[40px] sm:text-[35px] md:text-[40px] lg:text-[45px] xl:text-[50px]">
-          <span className="uxmm-text-color">Volunteer</span> Your Passion for UX
+          <span>Join Our UX Volunteer Community</span>
         </h1>
 
-        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[87%] lg:left-[85%] xl:left-[75%]  hidden md:block">
+        <div className="absolute sm:top-[100px] md:top-[145px] min-[320px]:left-[90%] sm:left-[79%] md:left-[88%] lg:left-[88%] xl:left-[79%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset1}
             alt="DoodleAsset"
@@ -35,14 +35,13 @@ const Volunteer = () => {
         </div>
 
         {/* Description */}
-        <p className="text-customgray text-base text-[16px] text-center font-[400] leading-[26px] leading-relaxed mt-4 max-w-xl font-poppins">
+        <p className="text-customgray text-[16px] text-center font-[400] leading-[26px] leading-relaxed mt-4 max-w-xl font-poppins">
           Want to contribute to the future of UX design? Join our passionate
-          volunteer community!
-          <br /> Whether you're a seasoned professional or just starting out,
-          join our community and make a difference. Share your knowledge, learn
-          from experts, build your network, and shape the future of UX. No
-          experience needed. Let's work together to create a more user-friendly
-          world.
+          volunteer community! Whether you're a seasoned professional or just
+          starting out, join our community and make a difference. Share your
+          knowledge, learn from experts, build your network, and shape the
+          future of UX. No experience needed. Let's work together to create a
+          more user-friendly world.
         </p>
 
         <a
@@ -52,7 +51,7 @@ const Volunteer = () => {
           Become a volunteer
         </a>
 
-        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[425px] xl:top-[405px] min-[320px]:left-[20%] md:left-[10%] lg:left-[15%] xl:left-[25%]  hidden md:block">
+        <div className="absolute max-[320px]:top-[300px] sm:top-[100px] md:top-[475px] lg:top-[425px] xl:top-[405px] min-[320px]:left-[20%] md:left-[10%] lg:left-[15%] xl:left-[25%]  hidden md:block">
           <img
             src={EImageUri.DoodleAsset2}
             alt="DoodleAsset"
@@ -67,10 +66,10 @@ const Volunteer = () => {
             <img
               src={EImageUri.Volunteer}
               alt="uxmm"
-              className="h-auto max-w-full"
+              className="h-auto max-w-full border-4 border-white rounded shadow-xl"
             />
           </div>
-          <div className="md:mt-5 md:w-1/2 md:text-left">
+          <div className="md:mt-5 md:w-2/3 md:text-left ml-4">
             <div className="flex items-center justify-between">
               <p className="text-[32px] font-semibold leading-[42px] md:m-5 text-left font-plusJakarta">
                 Benefits of becoming a{" "}
@@ -84,22 +83,25 @@ const Volunteer = () => {
                 className="h-auto max-w-full"
               />
             </div>
-            <ul className="max-w-md font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:m-5 md:py-0 list-disc list-inside">
+            <ul className="max-w-xl font-poppins text-[16px] leading-[26px] text-customgray mt-7 md:m-5 md:py-0 list-disc list-inside">
               <li>
-                🎓 <b>Professional Growth:</b> Gain valuable skills and
-                insights.
+                🎓 <b className="uxmm-text-color">Professional Growth:</b> Gain
+                valuable skills and insights.
               </li>
               <li>
-                ☕ <b>Network & Connect:</b> Build relationships in the UX
-                community.
+                ☕ <b className="uxmm-text-color">Network & Connect:</b> Build
+                relationships in the UX community.
               </li>
               <li>
-                🏆 <b>Boost Your Career/Career Advancement:</b> Get noticed by
-                industry leaders.
+                🏆{" "}
+                <b className="uxmm-text-color">
+                  Boost Your Career/Career Advancement:
+                </b>{" "}
+                Get noticed by industry leaders.
               </li>
               <li>
-                💞 <b>Effective Impact:</b> Empower Myanmar's UX community with
-                flexible commitment.
+                💞 <b className="uxmm-text-color">Effective Impact:</b> Empower
+                Myanmar's UX community with flexible commitment.
               </li>
             </ul>
             <p className="max-w-md font-poppins text-[16px] leading-[26px] md:m-5 text-customgray mt-5">
@@ -113,17 +115,20 @@ const Volunteer = () => {
 
       <div className="flex flex-col md:flex-row items-center justify-between ml-0 md:ml-[14%]">
         {/* Left Content */}
-        <div className="text-center md:text-left max-w-lg px-6 py-12">
-          <h2 className="text-[30px] font-extrabold leading-[44px] text-left font-plusJakarta text-customgray">
+        <div className="text-center md:text-left px-6 py-12">
+          <span className="text-[30px] font-extrabold leading-[44px] text-left font-plusJakarta text-customgray">
             It’s easier than you think. <br />
             <span className="uxmm-text-color">Join us.</span> We’ll help you
             every step of the way.
-          </h2>
+          </span>
 
           <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
-            <button className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg">
-              Become a mentor
-            </button>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc0sm1rEZOzyG__uQYZ7gBKlECL3a3dx82GdG7_jzomuRhSvg/viewform"
+              className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg"
+            >
+              Become a volunteer
+            </a>
           </div>
         </div>
 

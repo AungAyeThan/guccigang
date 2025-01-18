@@ -13,6 +13,7 @@ interface ModalProps {
   image: string;
   about: string;
   link: Record<string, string>;
+  type?: string;
 }
 
 const ModalComponent: React.FC<ModalProps> = ({
@@ -23,6 +24,7 @@ const ModalComponent: React.FC<ModalProps> = ({
   image,
   about,
   link,
+  type = "member",
 }) => {
   // Prevent scrolling when the modal is open
   useEffect(() => {
@@ -56,7 +58,7 @@ const ModalComponent: React.FC<ModalProps> = ({
         {/* Modal header */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-[32px] leading-[42px] font-[700] font-plusJakarta">
-            Member Profile
+            {type == "member" ? "Member" : "Mentor"} Profile
           </h2>
           <button
             onClick={onClose}

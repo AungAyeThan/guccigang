@@ -41,7 +41,7 @@ const Partner = () => {
         </p>
 
         <a
-          href="mailto:info@uxmm.org"
+          href="https://forms.gle/syhDbWK6jKsn8xuaA"
           className="mt-6 px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:from-pink-600 hover:to-red-600 transition"
         >
           Become a Partner
@@ -106,7 +106,7 @@ const Partner = () => {
 
           <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
             <a
-              href="mailto:info@uxmm.org"
+              href="https://forms.gle/syhDbWK6jKsn8xuaA"
               className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 font-semibold text-white shadow-lg"
             >
               Become a partner
@@ -147,7 +147,7 @@ const Partner = () => {
               </p>
             </div>
             <a
-              href="mailto:info@uxmm.org"
+              href="/mentor"
               className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
             >
               Become a mentor
@@ -177,7 +177,7 @@ const Partner = () => {
               </p>
             </div>
             <a
-              href="mailto:info@uxmm.org"
+              href="/speaker"
               className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
             >
               Become a Speaker
@@ -201,7 +201,7 @@ const Partner = () => {
                 </p>
               </div>
               <a
-                href="mailto:info@uxmm.org"
+                href="/speaker"
                 className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
               >
                 Become a Speaker
@@ -243,7 +243,7 @@ const Partner = () => {
               </p>
             </div>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc0sm1rEZOzyG__uQYZ7gBKlECL3a3dx82GdG7_jzomuRhSvg/viewform"
+              href="/volunteer"
               className="mt-4 self-start px-6 py-2 border-2 border-red-500 uxmm-text-color text-[16px] leading-[26px] font-[500] font-poppins rounded-xl hover:from-pink-600 hover:to-red-600 transition"
             >
               Become a Volunteer

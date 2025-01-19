@@ -164,9 +164,12 @@ const Volunteer = () => {
                 audience.
               </p>
             </div>
-            <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">
+            <a
+              href="/partner"
+              className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition"
+            >
               Become a partner
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -192,9 +195,12 @@ const Volunteer = () => {
                 skills.
               </p>
             </div>
-            <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">
+            <a
+              href="/mentor"
+              className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition"
+            >
               Become a mentor
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -214,9 +220,12 @@ const Volunteer = () => {
                   your leadership skills.
                 </p>
               </div>
-              <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">
+              <a
+                href="/mentor"
+                className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition"
+              >
                 Become a mentor
-              </button>
+              </a>
             </div>
 
             <div className="flex-shrink-0 lg:w-1/2">
@@ -236,7 +245,7 @@ const Volunteer = () => {
           <div className="flex-shrink-0 lg:w-1/2">
             <img
               src={EImageUri.SpreakerProgram}
-              alt="Mentor Program"
+              alt="speaker Program"
               className="rounded-lg w-full h-[200px] object-cover"
             />
           </div>
@@ -253,9 +262,12 @@ const Volunteer = () => {
                 professionals and enthusiasts in Myanmar.
               </p>
             </div>
-            <button className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition">
+            <a
+              href="/speaker"
+              className="mt-4 self-start px-6 py-2 border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition"
+            >
               Become a Speaker
-            </button>
+            </a>
           </div>
         </div>
       </div>
